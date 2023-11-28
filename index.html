@@ -1,14 +1,747 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/black-ops-one" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Portfólio</title>
+    <title>Portfólio Web Edson Lopes</title>
+    <link rel="icon" type="image/png" href="./assets/guys asi code/png/cat-asi-code.png" >
 </head>
+
 <body>
-    
+    <header class="header-menu">
+        <div class="header-container-row">
+            <div class="header-row-logo font-style-logo">
+                <a href="#"><span>ASI<em>CODE</em></span></a>
+            </div>
+            <div class="header-row-menu-nav">
+                <nav id="menu-nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                        aria-expanded="false">
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="#" data-section="home-principal">Home</a></li>
+                        <li><a href="#" data-section="section-portfolio">Portfólio</a></li>
+                        <li><a href="#" data-section="section-about-me">Sobre mim</a></li>
+                        <li><a href="#" data-section="section-contatcs">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="home-principal" class="main-initial-apresentation">
+        <section id="container-exibi-icons" class="section-initial-presentation">
+            <div class="container-apresentation-initial-grid">
+                <div class="grid-text-initial-apresentation">
+                    <div class="initial-logo-apresentation">
+                        <img src="./assets/guys asi code/svg/SVG CAT ANIMADO SALTO LOGO ASI CODE.svg" alt="">
+                    </div>
+                    <div class="text-initial-apresentation">
+                        <div class="box-gray-text-presentation-initial">
+                        </div>
+                        <div class="text-presentation-initial">
+                            <p class="text-presentation-initial-p1">Olá,comunidade</P>
+                            <p class="text-presentation-initial-p2">Sou <b>Desenvolvedor</b> de software full stack</p>
+                            <p class="text-presentation-initial-p3">Seja bem vindo ao meu <b>Portfólio!</b></p>
+                        </div>
+                    </div>
+                    <div class="button-apresentation-initial-about-me">
+                        <div class="button-about-me-initial">
+                            <button class="btn-about-me-initial" href="#" data-section="section-about-me">Saiba mais
+                                sobre mim!
+                            </button>
+                        </div>
+                    </div>
+                    <div class="column-social-initial">
+                        <div class="content-social-widget-social">
+                            <span class="grid-item-social">
+                                <div class="container-social-icons">
+                                    <div class="social-icons-initial-apresentation">
+                                        <a target="_blank" href="https://github.com/edsonrdl">
+                                            <svg viewBox="0 0 16 16" class="brands bi-github" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="social-icons-initial-apresentation">
+                                        <a target="_blank" href="https://www.linkedin.com/in/edson-rodrigo-lopes-62b016263/">
+                                            <svg class="brands fa-linkedin-in" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path
+                                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="social-icons-initial-apresentation">
+                                        <a target="_blank" href="https://www.instagram.com/_edsonrd_lopes/">
+                                            <svg class="brands fa-instagram" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-my-img-initial-apresentation">
+                    <div class="my-img-initial-apresentation">
+                        <div id="mask-violet">
+                        </div>
+                        <div id="mask-gray">
+                        </div>
+                        <div class="content-my-img">
+                            <img src="./assets/guys asi code/png/img-guys.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-portfolio" class="section-portfolio">
+            <div class="container-portfolio">
+                <div class="column-portfolio-text-card">
+                    <div class="portfolio-text">
+                        <h1>Menu <b>Portfólio</b></h1>
+                    </div>
+                    <div class="portfolio-card-row">
+                        <div class="container-card-content">
+                            <div class="container-card-imgs-slide">
+                                <div class="card-port-imgs">
+                                    <div id="card-chatbot-whatsapp-api" class="slide-portfolio">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/chatbot whatsapp api/img-1-chatbot-whatsapp-api.png"
+                                            alt="Imagem exemplo 1 projeto chatbot">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/chatbot whatsapp api/img-2-chatbot-whatsapp-api.png"
+                                            alt="Imagem exemplo 2 projeto chatbot">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/chatbot whatsapp api/img-3-chatbot-whatsapp-api.png"
+                                            alt="Imagem exemplo 3 projeto chatbot">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/chatbot whatsapp api/img-4-chatbot-whatsapp-api.png"
+                                            alt="Imagem exemplo 4 projeto chatbot">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/chatbot whatsapp api/img-5-chatbot-whatsapp-api.png"
+                                            alt="Imagem exemplo 5 projeto chatbot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title-text-project-img">
+                                <h1>Chatbot Whatsapp API</h1>
+                                <p><b>Descrição: </b>Chatbot assistente whatsapp para vendas com Sistema gerenciador com Dashboard.</p>
+                                <p><b>Status:</b> Em Desenvolvimento.</p>
+                            </div>
+                            <div class="technologies-used">
+                                <img src="./assets/icons/icon-html-5.png" alt="">
+                                <img src="./assets/icons/icon-css.png" alt="">
+                                <img src="./assets/icons/icon-javascript.png" alt="">
+                                <img src="./assets/icons/icon-java.png" alt="">
+                                <img src="./assets/icons/icon-spring-boot.png" alt="">
+                                <img src="./assets/icons/icon-mysql.png" alt="">
+                            </div>
+                            <div class="container-button-card">
+                                <div class="button-card-port">
+                                    <a class="button-card-port-btn-github"
+                                        href="https://github.com/edsonrdl/envio-de-mensagens-simples-whatsapp-api"
+                                        target="_blank"> GitHub
+                                    </a>
+                                </div>
+                                <div class="button-card-port">
+                                    <button id="chatbot-whatsap-api-preview" class="button-card-port-btn-preview-modal">
+                                        Visualizar
+                                    </button>
+                                    <div id="modal-portfolio-preview" class="modal-preview">
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <video controls>
+                                                <source src="./assets/projects/Videos/chatbotWhatsapAPI.mp4" type="video/mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-content">
+                            <div class="container-card-imgs-slide">
+                                <div class="card-port-imgs">
+                                    <div id="card-management-system-dashboard-dark-ligth" class="slide-portfolio">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/system management dashboard tema ligth dark/img-1-system-management.png"
+                                            alt="Imagem exemplo 1 Sistema de gerenciamento">
+                                        <img class="slide-img-portfolio"
+                                            src="./assets/projects/system management dashboard tema ligth dark/img-2-system-management.png"
+                                            alt="Imagem exemplo 2 Sistema de gerenciamento">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title-text-project-img">
+                                <h1>Gerenciador de Sistema</h1>
+                                <p><b>Descrição: </b>Dashboard com análise de vendas e pesquisa de pedidos</p>
+                                <p><b>Status:</b> Em Desenvolvimento</p>
+                            </div>
+                            <div class="technologies-used">
+                                <img src="./assets/icons/icon-html-5.png" alt="">
+                                <img src="./assets/icons/icon-css.png" alt="">
+                                <img src="./assets/icons/icon-javascript.png" alt="">
+                            </div>
+                            <div class="container-button-card">
+                                <div class="button-card-port">
+                                    <a class="button-card-port-btn-github"
+                                        href="https://github.com/edsonrdl/sistema-gerenciador-dashboard-tema-escuro-claro"
+                                        target="_blank"> GitHub
+                                    </a>
+                                </div>
+                                <div class="button-card-port">
+                                    <a id="system-dashboard-dark-ligth-preview" class="button-card-port-btn-preview"  href="https://edsonrdl.github.io/system-management-admin-dashboard-theme-dark-ligth/#"   target="_blank" >
+                                        Visualizar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-about-me" class="section-about-me">
+            <div class="container-about-me">
+                <div class="content-about-me">
+                    <h1>Sobre <b>mim</b></h1>
+                </div>
+                <div class="container-row-content-about-me-apresentation">
+                    <div class="content-my-img-about-me-circle">
+                        <div id="my-img-mask" class="my-img-about-me">
+                            <img src="./assets/guys asi code/png/img-guys.png"
+                                alt="Imagem pessoal perfil">
+                        </div>
+                    </div>
+                    <div class="container-texts">
+                        <div class="row-text-apresentation-name-function">
+                            <h1>Olá,Eu sou <b>Edson Rodrigo Damasceno Lopes</b>.</h1>
+                            <h2>Desenvolvedor de Software <b>Full Stack</b></h2>
+                        </div>
+                        <div class="row-text-apresentation-description">
+                            <h3>Explorando o universo tecnológico, apaixonado por novas competências e soluções
+                                sofisticadas.
+                            </h3>
+                            <p>"Como estudante de Sistemas de Informação, dedico-me não apenas aos conteúdos acadêmicos,
+                                mas também à busca constante por conhecimento autônomo. Antes mesmo de ingressar na
+                                faculdade, já cultivava práticas de estudo eficientes e uma curiosidade inata pela
+                                aprendizagem, destacando-me por minha disposição em adquirir e compartilhar
+                                conhecimento. Essa abordagem proativa reflete não apenas meu comprometimento com a
+                                excelência acadêmica, mas também a paixão que tenho por aprender e contribuir para o
+                                mundo da tecnologia."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-row-infor-guys">
+                    <div class="row-information-guys-details">
+                        <div class="infor-guys-text">
+                            <h1>Informações Pessoais</h1>
+                        </div>
+                        <div class="container-information-guys-details">
+                            <dl>
+                                <dt>Primeiro Nome :</dt>
+                                <dd>Edson </dd>
+
+                                <dt>Sobrenome :</dt>
+                                <dd>Lopes</dd>
+
+                                <dt>Idade :</dt>
+                                <dd>26</dd>
+
+                                <dt>Nacionalidade :</dt>
+                                <dd>Brasileiro</dd>
+
+                                <dt>Endereço :</dt>
+                                <dd>Belém-PA</dd>
+
+                                <dt>Telefone :</dt>
+                                <dd>+55 (91) 99169-3284</dd>
+                            </dl>
+                        </div>
+                        <div class="container-button-download-cv">
+                            <div class="img-cat-display">
+                                <span class="material-symbols-outlined">
+                                    thumb_up
+                                </span>
+                                <img src="./assets/guys asi code/png/cat-asi-code.png" alt="Imagem gato ASI CODE">
+                            </div>
+                            <div class="content-button-download-cv">
+                                <span class="span-download">Download CV <button class="btn-download-cv"
+                                        onclick="downloadCv()"><span id="material-symbols-outlined-download"
+                                            class="material-symbols-outlined">
+                                            download
+                                        </span></button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-information-details-technician">
+                        <div class="information-details-technician">
+                            <div class="content-information-details-technician">
+                                <span>1<b>+</b></span>
+                            </div>
+                            <div class="content-information-details-technician">
+                                <h1>Ano de <br> Experiências</h1>
+                            </div>
+                        </div>
+                        <div class="information-details-technician">
+                            <div class="content-information-details-technician">
+                                <span>5 <b>+</b></span>
+                            </div>
+                            <div class="content-information-details-technician">
+                                <h1>Participações em Projetos</h1>
+                            </div>
+                        </div>
+                        <div class="information-details-technician">
+                            <div class="content-information-details-technician">
+                                <span>5 <b>+</b></span>
+                            </div>
+                            <div class="content-information-details-technician">
+                                <h1>Projetos Pessoais</h1>
+                            </div>
+                        </div>
+                        <div class="information-details-technician">
+                            <div class="content-information-details-technician">
+                                <span>1</span>
+                            </div>
+                            <div class="content-information-details-technician">
+                                <h1>Projeto em <br>Desenvolvimento</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-information-asi-code">
+                        <div class="information-asi-code-logo">
+                            <div class="logo-infomration">
+                                <img src="./assets/guys asi code/png/logo-asi-code.png" alt="">
+                            </div>
+                            <div class="title-asi-code">
+                                <h1>O que é <b>ASI</b> <b> &#123;CODE&#125;</b> ?</h1>
+                            </div>
+                        </div>
+                        <div class="text-information-definition">
+                            <p>"Asi Code" reflete minha abordagem para a codificação.Resultado da minha jornada de evolução como desenvolvedor, focado não apenas em aprimorar minhas habilidades, mas também em compartilhar conhecimento com a comunidade. </p>
+                            <p>Ao compartilhar snippets, soluções e insights, busco não apenas demonstrar competência
+                                técnica, mas também inspirar outros desenvolvedores a abraçarem a criatividade na
+                                programação. O "Asi Code" não é apenas um registro visual da minha jornada, mas um
+                                convite para a comunidade se unir na busca contínua pela excelência no desenvolvimento
+                                de software.
+
+                                Junte-se a mim nesta viagem de aprendizado e descoberta enquanto exploramos o fascinante
+                                mundo do desenvolvimento através do prisma único do "Asi Code". <br> 🌐💻 #AsiCode
+                                #CodingArtistry #TechInnovation</p>
+                        </div>
+                        <div class="social-asi-code">
+                            <div class="content-social">
+                                <h2>siga no instagram</h2>
+                                <div class="social-icons-initial-apresentation">
+                                    <a href="https://www.instagram.com/_asi_code/">
+                                        <svg class="brands fa-instagram" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteiner-skills-competence">
+                    <div class="content-experiential">
+                        <div class="content-title">
+                            <span id="icon-experiential" class="material-symbols-outlined">
+                                computer
+                            </span>
+                            <h1>Experiências</h1>
+                        </div>
+                        <div class="content-experiential-text">
+                            <p>Desenvolvedor Full Stack com especialização em C# e Angular 13, experiente em operações CRUD, integração com banco de dados, utilização de ferramentas de desenvolvimento e práticas DevOps, validações robustas e na criação de chatbots para o WhatsApp.</p>
+                            <p>Em bots, experiência com  Spring Boot(Java), destacando-me em testes (unitários e de componentes), e utilizando ferramentas como Docker Compose e Postman para testes de API. Sigo metodologias ágeis, com proficiência em diagramas UML.</p>
+                            <p>Comprometido com a excelência técnica, destaco a eficiência na criação e leitura de documentação de requisitos e APIs. Minha abordagem proativa me qualifica para projetos desafiadores.</p>
+                        </div>
+                    </div>
+                    <div class="personal-education">
+                        <div class="content-title">
+                            <span class="material-symbols-outlined">
+                                local_library
+                            </span>
+                            <h1>Educação e Habilidades Pessoais</h1>
+                        </div>
+                        <div class="content-education-text">
+                            <p>Ingressei na Universidade Estácio de Sá, Campus IESAM, em Belém, PA, onde presto
+                                Bacharel em Sistemas de Informação após cursar o ensino médio em escolas públicas.</p>
+                            <p>Destaco minha busca contínua por conhecimento, iniciando como programador antes da minha integração na universidade. Minha paixão pela aprendizagem transcendeu a sala de aula, evidenciando-se na autodisciplina para estudar diversos tópicos, enriquecendo minhas habilidades como programador.</p>
+                            <p>Organização é uma de minhas características distintivas, proporcionando eficiência nos
+                                estudos e nas atividades diárias. Autônomo, reconheço a importância de buscar apoio
+                                quando necessário, fomentando um ambiente colaborativo e de aprendizado contínuo.</p>
+                            <p>Além da excelência acadêmica, mantenho um compromisso sólido com o aprimoramento
+                                constante. Gosto não apenas de estudar, mas também de compartilhar conhecimento,
+                                contribuindo para o crescimento coletivo. Essa mentalidade de estudante persiste, mesmo
+                                com apenas um ano de experiência na universidade, onde antecipo e aprofundo temas
+                                essenciais para meu desenvolvimento como programador.</p>
+                        </div>
+
+                    </div>
+                    <div class="personal-interests">
+                        <div class="content-title">
+                            <span class="material-symbols-outlined">
+                                digital_wellbeing
+                            </span>
+                            <h1>Interesses Pessoais</h1>
+                        </div>
+                        <div class="content-interests-text">
+                            <p>Sou uma pessoa curiosa e determinada, sempre em busca dos meus objetivos. Tenho uma
+                                paixão genuína por adquirir conhecimento e estou totalmente comprometido em implementar
+                                e aprender boas práticas de programação. Meu objetivo é me tornar um programador
+                                excepcional, tanto em projetos pessoais quanto no mercado de trabalho.</p>
+                            <p>Destaco minha habilidade didática ao estudar, sendo capaz de aprender rapidamente devido
+                                à minha persistência. Acredito que nunca é tarde para aprender e ensinar, especialmente
+                                no campo da tecnologia, onde as inovações ocorrem constantemente, visando melhorar a
+                                qualidade de vida.</p>
+                            <p>Minha autonomia na busca de conhecimento é uma característica forte. Antes de ingressar
+                                na área de TI, iniciei meus estudos em Biomedicina, após passar no vestibular. Ao
+                                começar a trabalhar como desenvolvedor, decidi me aprofundar ainda mais, matriculando-me
+                                na minha atual universidade de Sistemas de Informação. Essa jornada reflete meu
+                                compromisso em evoluir e buscar constantemente desafios que impulsionem meu crescimento
+                                pessoal e profissional.</p>
+                        </div>
+                    </div>
+                    <div class="skills-developer">
+                        <div class="content-title">
+                            <span class="material-symbols-outlined">
+                                developer_mode_tv
+                            </span>
+                            <h1>Habilidades como Desenvolvedor</h1>
+                        </div>
+                        <div class="content-skills-developer">
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-html-5.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Html</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-css.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>CSS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-javascript.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Javascript</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-typescript.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Typescript</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-angula.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Angular</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-sass.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Sass</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-c-sharp-logo.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>C#</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-.net-framework.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>.NET core</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-java.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Java</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-spring-boot.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Spring Boot</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-mongodb.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Mongodb</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-mysql.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Mysql</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-postgres.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Postgres</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-postman.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Postman</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-docker.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Docker</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-python.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Python</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div class="technology-icon">
+                                        <img src="./assets/icons/icon-sql-server.png" alt="">
+                                    </div>
+                                    <div class="technology-name">
+                                        <h2>Sql Server</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-technology-developer">
+                                <div class="content-technology-icon-name">
+                                    <div aria-label="Loading..." role="status" class="loader">
+                                        <svg class="icon-loading" viewBox="0 0 256 256">
+                                          <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                          <line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        </svg>
+                                        <span class="loading-text">Loading...</span>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-contatcs" class="section-contatcs">
+            <div class="text-contact-apresentation-title">
+                <div class="title-contact">
+                    <h1>Meus <b>Contatos</b></h1>
+                </div>
+            </div>
+            <div class="grid-contacts">
+                <div class="column-text-final">
+                    <div class="text-welcome">
+                        <h2>Bem-vindo à minha seção de contatos!</h2>
+                        <h3>Desenvolvedor de software pronto para desafios e aprendizado</h3>
+                    </div>
+                    <div class="text-final">
+                        <p>Aberto a novos desafios e experiências sempre pronto para aprender. Vamos explorar juntos as
+                            possibilidades emocionantes que o mundo do desenvolvimento de software tem a oferecer.</p>
+                        <p>Busca contínua de conhecimento. Pronto para enfrentar desafios e crescer constantemente no
+                            mundo do desenvolvimento de software.</p>
+                    </div>
+                </div>
+                <div class="column-contatcs">
+                    <div class="text-contatcs-conect">
+                        <div class="text-conect-final">
+                            <h1>Conecte-se comigo</h1>
+                            <p>Estou aberto a oportunidades!</p>
+                        </div>
+                    </div>
+                    <div class="contacts-information">
+                        <div class="contact-email">
+                            <h3>E-mail :</h3>
+                            <p>edsonrodrigo11111@gmail.com</p>
+                            <span onclick="copyContacts('edsonrodrigo11111@gmail.com')"
+                                class="material-symbols-outlined copy-icon">
+                                content_copy
+                            </span>
+                        </div>
+                        <div class="contact-phone-number">
+                            <h3>Telefone :</h3>
+                            <p>+55 (91) 99169-3284</p>
+                            <span  onclick="copyContacts('+5591991693284')" class="material-symbols-outlined copy-icon">
+                                content_copy
+                            </span>
+                        </div>
+                        <div class="contact-linkedin">
+                            <h3>linkedin :</h3>
+                            <div class="social-icons-initial-apresentation">
+                                <a href="https://www.linkedin.com/in/edson-rodrigo-lopes-62b016263/" target="_blank">
+                                    <svg class="brands fa-linkedin-in" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-github">
+                            <h3>GitHub :</h3>
+                            <div class="social-icons-initial-apresentation" >
+                                <a href="https://github.com/edsonrdl" target="_blank">
+                                    <svg viewBox="0 0 16 16" class="brands bi-github" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-instagram-guys">
+                            <h3>Instagram Pessoal:</h3>
+                            <div class="social-icons-initial-apresentation">
+                                <a href="https://www.instagram.com/_edsonrd_lopes/" target="_blank">
+                                    <svg class="brands fa-instagram" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-instagram-asi-code">
+                            <h3>Instagram ASI CODE :</h3>
+                            <div class="social-icons-initial-apresentation">
+                                <a  href="https://www.instagram.com/_asi_code/" target="_blank">
+                                    <svg class="brands fa-instagram" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-message-icon-whatsapp">
+                            <h3>Chat WhatsApp :</h3>
+                            <div class="social-icon-contact">
+                                <a href="https://wa.me/5591991693284?text=Olá%2C%20Edson%2C%20tudo%20bem%3F" target="_blank">
+                                    <svg class="brands  bi-whatsapp" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                        <path
+                                            d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 L 2.0371094 46.730469 A 1.0001 1.0001 0 0 0 3.2402344 47.970703 L 14.210938 45.251953 C 17.434629 46.972929 21.092591 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 21.278025 46 17.792121 45.029635 14.761719 43.333984 A 1.0001 1.0001 0 0 0 14.033203 43.236328 L 4.4257812 45.617188 L 7.0019531 36.425781 A 1.0001 1.0001 0 0 0 6.9023438 35.646484 C 5.0606869 32.523592 4 28.890107 4 25 C 4 13.390466 13.390466 4 25 4 z M 16.642578 13 C 16.001539 13 15.086045 13.23849 14.333984 14.048828 C 13.882268 14.535548 12 16.369511 12 19.59375 C 12 22.955271 14.331391 25.855848 14.613281 26.228516 L 14.615234 26.228516 L 14.615234 26.230469 C 14.588494 26.195329 14.973031 26.752191 15.486328 27.419922 C 15.999626 28.087653 16.717405 28.96464 17.619141 29.914062 C 19.422612 31.812909 21.958282 34.007419 25.105469 35.349609 C 26.554789 35.966779 27.698179 36.339417 28.564453 36.611328 C 30.169845 37.115426 31.632073 37.038799 32.730469 36.876953 C 33.55263 36.755876 34.456878 36.361114 35.351562 35.794922 C 36.246248 35.22873 37.12309 34.524722 37.509766 33.455078 C 37.786772 32.688244 37.927591 31.979598 37.978516 31.396484 C 38.003976 31.104927 38.007211 30.847602 37.988281 30.609375 C 37.969311 30.371148 37.989581 30.188664 37.767578 29.824219 C 37.302009 29.059804 36.774753 29.039853 36.224609 28.767578 C 35.918939 28.616297 35.048661 28.191329 34.175781 27.775391 C 33.303883 27.35992 32.54892 26.991953 32.083984 26.826172 C 31.790239 26.720488 31.431556 26.568352 30.914062 26.626953 C 30.396569 26.685553 29.88546 27.058933 29.587891 27.5 C 29.305837 27.918069 28.170387 29.258349 27.824219 29.652344 C 27.819619 29.649544 27.849659 29.663383 27.712891 29.595703 C 27.284761 29.383815 26.761157 29.203652 25.986328 28.794922 C 25.2115 28.386192 24.242255 27.782635 23.181641 26.847656 L 23.181641 26.845703 C 21.603029 25.455949 20.497272 23.711106 20.148438 23.125 C 20.171937 23.09704 20.145643 23.130901 20.195312 23.082031 L 20.197266 23.080078 C 20.553781 22.728924 20.869739 22.309521 21.136719 22.001953 C 21.515257 21.565866 21.68231 21.181437 21.863281 20.822266 C 22.223954 20.10644 22.02313 19.318742 21.814453 18.904297 L 21.814453 18.902344 C 21.828863 18.931014 21.701572 18.650157 21.564453 18.326172 C 21.426943 18.001263 21.251663 17.580039 21.064453 17.130859 C 20.690033 16.232501 20.272027 15.224912 20.023438 14.634766 L 20.023438 14.632812 C 19.730591 13.937684 19.334395 13.436908 18.816406 13.195312 C 18.298417 12.953717 17.840778 13.022402 17.822266 13.021484 L 17.820312 13.021484 C 17.450668 13.004432 17.045038 13 16.642578 13 z M 16.642578 15 C 17.028118 15 17.408214 15.004701 17.726562 15.019531 C 18.054056 15.035851 18.033687 15.037192 17.970703 15.007812 C 17.906713 14.977972 17.993533 14.968282 18.179688 15.410156 C 18.423098 15.98801 18.84317 16.999249 19.21875 17.900391 C 19.40654 18.350961 19.582292 18.773816 19.722656 19.105469 C 19.863021 19.437122 19.939077 19.622295 20.027344 19.798828 L 20.027344 19.800781 L 20.029297 19.802734 C 20.115837 19.973483 20.108185 19.864164 20.078125 19.923828 C 19.867096 20.342656 19.838461 20.445493 19.625 20.691406 C 19.29998 21.065838 18.968453 21.483404 18.792969 21.65625 C 18.639439 21.80707 18.36242 22.042032 18.189453 22.501953 C 18.016221 22.962578 18.097073 23.59457 18.375 24.066406 C 18.745032 24.6946 19.964406 26.679307 21.859375 28.347656 C 23.05276 29.399678 24.164563 30.095933 25.052734 30.564453 C 25.940906 31.032973 26.664301 31.306607 26.826172 31.386719 C 27.210549 31.576953 27.630655 31.72467 28.119141 31.666016 C 28.607627 31.607366 29.02878 31.310979 29.296875 31.007812 L 29.298828 31.005859 C 29.655629 30.601347 30.715848 29.390728 31.224609 28.644531 C 31.246169 28.652131 31.239109 28.646231 31.408203 28.707031 L 31.408203 28.708984 L 31.410156 28.708984 C 31.487356 28.736474 32.454286 29.169267 33.316406 29.580078 C 34.178526 29.990889 35.053561 30.417875 35.337891 30.558594 C 35.748225 30.761674 35.942113 30.893881 35.992188 30.894531 C 35.995572 30.982516 35.998992 31.07786 35.986328 31.222656 C 35.951258 31.624292 35.8439 32.180225 35.628906 32.775391 C 35.523582 33.066746 34.975018 33.667661 34.283203 34.105469 C 33.591388 34.543277 32.749338 34.852514 32.4375 34.898438 C 31.499896 35.036591 30.386672 35.087027 29.164062 34.703125 C 28.316336 34.437036 27.259305 34.092596 25.890625 33.509766 C 23.114812 32.325956 20.755591 30.311513 19.070312 28.537109 C 18.227674 27.649908 17.552562 26.824019 17.072266 26.199219 C 16.592866 25.575584 16.383528 25.251054 16.208984 25.021484 L 16.207031 25.019531 C 15.897202 24.609805 14 21.970851 14 19.59375 C 14 17.077989 15.168497 16.091436 15.800781 15.410156 C 16.132721 15.052495 16.495617 15 16.642578 15 z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+
 
     <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </body>
+
 </html>
