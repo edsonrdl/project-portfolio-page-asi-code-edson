@@ -16,3 +16,33 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+async function carregarJSON() {
+  try {
+    const response = await fetch('svg.json');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Erro ao carregar o arquivo JSON:', error);
+    throw error;
+  }
+}
+
+// Função para exibir os ícones na tela
+function exibirIcones(icones) {
+  const container = document.getElementById('icons-container');
+
+  icones.forEach((icone) => {
+    const div = document.createElement('div');
+    div.innerHTML = `<h3>${icone.name}</h3>${icone.path}`;
+    container.appendChild(div);
+  });
+}
+
+// Carregar o JSON e exibir os ícones
+carregarJSON().then((data) => {
+  if (data && data.icons) {
+    exibirIcones(data.icons);
+  }
+});

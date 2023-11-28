@@ -1,0 +1,14 @@
+{
+    "icons": [
+      {
+        "name": "icone1",
+        "path": "<svg>...</svg>"
+      },
+      {
+        "name": "icone2",
+        "path": "<svg>...</svg>"
+      }
+  
+    ]
+  }
+  
