@@ -394,6 +394,7 @@ transform: rotate(10deg);
 .portfolio-card-row{
   display: flex;
   flex-wrap: wrap;
+  padding: 40px;
   margin-top: 50px;
   justify-content: center;
   gap: 10px;
