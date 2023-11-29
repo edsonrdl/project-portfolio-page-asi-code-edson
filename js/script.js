@@ -19,7 +19,7 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 function getRandomIcon() {
   
   const imgsArray = [
-    "../imagens/icons/icon.net-framework.png",
+    "../imagens/icons/icon-.net-framework.png",
     "../imagens/icons/icon-angular.png",
     "../imagens/icons/icon-c-sharp-logo.png",
     "../imagens/icons/icon-css.png",
@@ -27,14 +27,15 @@ function getRandomIcon() {
     "../imagens/icons/icon-html-5.png",
     "../imagens/icons/icon-java.png",
     "../imagens/icons/icon-javascript.png",
-    "../imagens/icons/icon-sql-serve.png",
     "../imagens/icons/icon-mongodb.png",
-    "../imagens/icons/icon-mysql-50.png",
+    "../imagens/icons/icon-mysql.png",
     "../imagens/icons/icon-node-js.png",
+    "../imagens/icons/icon-postgres.png",
     "../imagens/icons/icon-postman.png",
     "../imagens/icons/icon-python.png",
+    "../imagens/icons/icon-sass.png",
     "../imagens/icons/icon-spring-boot.png",
-    "../imagens/icons/icon-spring-boot.png",
+    "../imagens/icons/icon-sql-server.png",
     "../imagens/icons/icon-typescript.png"
   ];
 

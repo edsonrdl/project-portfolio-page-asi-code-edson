@@ -137,7 +137,6 @@ body {
   width: 600px;
   overflow: hidden;
   height: 300px;
-  background-color: rgb(151, 151, 151);
   position: relative;
 }
 .icon {
@@ -244,10 +243,9 @@ body {
   border-radius: 50px;
   border: 5px solid #c5c5c5;
   padding: 5px;
+  opacity: 80%;
   bottom: 0;
-  transition: all 0.3s ease;
   box-shadow: var(--box-shadow-onys);
-
 }
 .button-about-me-initial:hover{
   box-shadow: var(--box-shadow-violet);
@@ -265,7 +263,6 @@ body {
   color: var(--color-white);
 }
 .btn-about-me-initial:hover{
-
   color: rgb(215, 215, 215);
 }
 .column-social-initial{
@@ -311,7 +308,6 @@ transform: rotate(10deg);
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 #mask-violet{
   position: absolute;
@@ -333,7 +329,6 @@ transform: rotate(10deg);
   clip-path: polygon(13% 0, 7% 55%, 100% 0);
   opacity: 50%;
 }
-
 .content-my-img{
   margin-right: 30px;
   bottom: 100px;
@@ -345,7 +340,7 @@ transform: rotate(10deg);
   
 }
 .content-my-img img{
-  width:500px;
+  width:400px;
   height: 100%;
   opacity: 50%;
 }
