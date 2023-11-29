@@ -16,11 +16,12 @@ btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
 
+
 function getRandomIcon() {
 
   const imgsArray = [
     "../imagens/icons/icon-.net-framework.png",
-    "../imagens/icons/icon-angular.png",
+    "../imagens/icons/icon-angula.png",
     "../imagens/icons/icon-c-sharp-logo.png",
     "../imagens/icons/icon-css.png",
     "../imagens/icons/icon-docker.png",
@@ -41,7 +42,7 @@ function getRandomIcon() {
 
 
   return imgsArray[Math.floor(Math.random() * imgsArray.length)];
-}
+};
 
 function getRandomPosition() {
   const container = document.getElementById('container-exibi-icons');
@@ -52,7 +53,7 @@ function getRandomPosition() {
   const x = Math.floor(Math.random() * width);
   const y = Math.floor(Math.random() * height);
   return { x, y };
-}
+};
 
 function showIcon() {
   const imgSrc = getRandomIcon();
@@ -69,14 +70,13 @@ function showIcon() {
   imgElement.style.top = position.y + 'px';
   imgElement.style.visibility = 'visible';
 
-
   container.appendChild(imgElement);
-
 
   setTimeout(() => {
     imgElement.style.visibility = 'hidden';
   }, 2000);
-}
+};
+setInterval(showIcon, 3000);
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);

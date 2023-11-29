@@ -2,15 +2,17 @@
   --color-blue-violet: #991AE6;
   --color-lavender-floral: #c478f3;
   --color-white: #FEFEFE;
+  --color-infor-ligth: #FEFEFE;
+  --color-infor-dark: #7B7B7B;
   --color-black: #000000;
   --color-onys: #3E3E3E;
   --color-gray: #7B7B7B;
   --color-light: #ffffff;
+  ---opacity: 50%;
   --padding-1: 5px;
   --box-shadow-onys: 0 1rem 2rem var(--color-onys);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -66,6 +68,10 @@ body {
   font-family: 'Black Ops One', sans-serif;
   transition: all 300ms ease;
 }
+.header-row-name a:hover {
+  color: var(--color-gray);
+
+}
 .header-row-name b {
   color: var(--color-blue-violet);
   font-size: 2rem;
@@ -74,8 +80,8 @@ body {
   transition: all 300ms ease;
 }
 
-.header-row-name a:hover {
-  color: var(--color-gray);
+.header-row-name b:hover {
+  color: var(--color-lavender-floral);
 
 }
 
