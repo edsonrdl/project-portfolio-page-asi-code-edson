@@ -19,22 +19,23 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 function getRandomIcon() {
   
   const imgsArray = [
-    "../imagens/icons/icons8-.net-framework-48.png",
-    "../imagens/icons/icons8-angular-50.png",
-    "../imagens/icons/icons8-c-sharp-logo-50.png",
-    "../imagens/icons/icons8-css-50.png",
-    "../imagens/icons/icons8-docker-50.png",
-    "../imagens/icons/icons8-html-50.png",
-    "../imagens/icons/icons8-java-50.png",
-    "../imagens/icons/icons8-javascript-50.png",
-    "../imagens/icons/icons8-microsoft-sql-server-48.png",
-    "../imagens/icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-25.png",
-    "../imagens/icons/icons8-mysql-50.png",
-    "../imagens/icons/icons8-node-js-32.png",
-    "../imagens/icons/icons8-postman-api-64.png",
-    "../imagens/icons/icons8-python-50.png",
-    "../imagens/icons/icons8-spring-boot-48.png",
-    "../imagens/icons/icons8-typescript-50.png"
+    "../imagens/icons/icon.net-framework.png",
+    "../imagens/icons/icon-angular.png",
+    "../imagens/icons/icon-c-sharp-logo.png",
+    "../imagens/icons/icon-css.png",
+    "../imagens/icons/icon-docker.png",
+    "../imagens/icons/icon-html-5.png",
+    "../imagens/icons/icon-java.png",
+    "../imagens/icons/icon-javascript.png",
+    "../imagens/icons/icon-sql-serve.png",
+    "../imagens/icons/icon-mongodb.png",
+    "../imagens/icons/icon-mysql-50.png",
+    "../imagens/icons/icon-node-js.png",
+    "../imagens/icons/icon-postman.png",
+    "../imagens/icons/icon-python.png",
+    "../imagens/icons/icon-spring-boot.png",
+    "../imagens/icons/icon-spring-boot.png",
+    "../imagens/icons/icon-typescript.png"
   ];
 
 
