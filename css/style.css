@@ -128,9 +128,14 @@ body {
 /*======Section initial apresentation=======*/
 .main-initial-apresentation{
   width: 100%;
+  height: 100;
+  overflow: hidden;
+  background: rgb(142, 142, 142);
+}
+.section-initial-presentation{
+  width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: rgb(37, 36, 36);
   background: radial-gradient(circle, rgba(37, 36, 36, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 #icon-container {
@@ -138,14 +143,11 @@ body {
   overflow: hidden;
   height: 300px;
   position: relative;
+ 
 }
 .icon {
   position: absolute;
   visibility: hidden;
-}
-.section-initial-presentation{
-  width: 100%;
-  height: 100%;
 }
 .container-apresentation-initial-grid{
   width: 100%;
@@ -344,6 +346,12 @@ transform: rotate(10deg);
   height: 100%;
   opacity: 50%;
 }
+/*==========Section Portfolio============*/
+.section-portfolio{
+  width: 100%;
+  height:100vh;
+}
+
 /*======Mediaquery=======*/
 /*======Menu mobile=======*/
 @media (max-width: 600px) {

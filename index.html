@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header-menu">
+    <header id="home-principal" class="header-menu">
         <div class="header-container-row">
             <div class="header-row-name"><a href="#"><span>ASI <b>CODE</b></span></a>
             </div>
@@ -21,8 +21,8 @@
                         <span id="hamburger"></span>
                     </button>
                     <ul id="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfólio</a></li>
+                        <li><a href="#" onclick="scrollToSection('home-principal')">Home</a></li>
+                        <li><a href="#" onclick="scrollToSection('section-portfolio')">Portfólio</a></li>
                         <li><a href="#">Sobre mim</a></li>
                         <li><a href="#">Projetos</a></li>
                         <li><a href="#">Acadêmico</a></li>
@@ -32,44 +32,13 @@
             </div>
         </div>
     </header>
-    <main id="container-exibi-icons" class="main-initial-apresentation">
-        <section class="section-initial-presentation">
-            <div  class="container-apresentation-initial-grid">
+    <main class="main-initial-apresentation">
+        <section id="container-exibi-icons" class="section-initial-presentation">
+            <div class="container-apresentation-initial-grid">
                 <div class="grid-text-initial-apresentation">
                     <div class="container-text-logo-social-apresentation">
                         <div class="initial-logo-apresentation">
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g transform="matrix(0.1, 0, 0, -0.1, -7.483543, 490.031036)" fill="#000000"
-                                        stroke="none">
-                                        <path
-                                            d="M3030 3576 c-118 -45 -325 -123 -460 -173 -135 -50 -378 -141 -540 -201 -162 -61 -376 -140 -475 -176 -99 -37 -196 -73 -215 -81 -19 -8 -134 -51 -255 -95 -121 -45 -247 -92 -280 -104 -33 -13 -124 -47 -203 -76 -78 -29 -142 -56 -142 -60 0 -4 95 -96 212 -206 485 -455 737 -691 1168 -1094 560 -524 556 -520 563 -520 6 0 7 2 78 243 l52 177 1107 0 c609 0 1127 3 1151 6 40 5 47 3 76 -25 34 -32 67 -39 94 -18 60 46 34 127 -42 129 -24 1 -38 -6 -54 -26 l-22 -27 -1141 -6 c-967 -4 -1143 -3 -1147 9 -3 7 54 209 126 448 72 239 189 628 259 864 71 235 131 430 132 432 2 2 336 4 741 5 l738 1 26 -26 c32 -33 67 -33 98 -1 32 31 32 69 0 100 -32 33 -60 31 -97 -5 l-30 -30 -730 0 -730 0 7 31 c4 17 45 155 91 307 46 152 84 277 84 279 0 9 -44 -6 -240 -81z m-100 -245 c0 -8 -102 -348 -495 -1646 -51 -170 -103 -341 -115 -380 -11 -38 -25 -76 -29 -84 -7 -11 -105 76 -407 360 -219 206 -471 441 -559 524 -356 332 -486 458 -478 466 7 7 549 211 1543 580 206 77 402 150 435 163 64 26 105 32 105 17z"
-                                            style="fill: rgb(255, 255, 255);" />
-                                    </g>
-                                </g>
-                                <g transform="matrix(0.1, 0, 0, -0.1, -7.44618, 487.566711)" fill="#000000"
-                                    stroke="none">
-                                    <path
-                                        d="M2565 3099 c-93 -38 -264 -107 -380 -153 -115 -46 -405 -162 -644 -257 l-435 -174 80 -7 c180 -16 463 -39 678 -54 l230 -16 35 38 c19 22 125 138 236 259 110 121 245 268 299 328 54 59 92 107 84 106 -7 0 -89 -32 -183 -70z"
-                                        style="fill: rgb(153, 26, 230);" />
-                                    <path
-                                        d="M620 2296 c0 -10 5 -47 10 -84 14 -95 65 -470 76 -559 1 -12 5 -34 8 -50 3 -15 13 -84 21 -153 8 -69 17 -136 20 -150 2 -14 11 -74 20 -134 8 -60 20 -114 25 -121 7 -8 60 -15 153 -19 176 -8 388 -23 527 -36 100 -10 543 -40 578 -40 11 0 2 14 -29 43 -26 23 -134 124 -242 224 l-195 183 -238 2 -239 3 -8 145 c-4 80 -10 186 -13 236 l-6 91 -86 78 c-48 43 -134 123 -192 179 -161 157 -190 181 -190 162z"
-                                        style="fill: rgb(115, 115, 115);" />
-                                    <g transform="matrix(0.999906, 0.01373, -0.01373, 0.999906, 549.403259, 117.188484)"
-                                        fill="#000000" stroke="none" style="transform-origin: 1100px 3359.18px;">
-                                        <path
-                                            d="M1474 3971 c-68 -17 -164 -100 -164 -141 0 -11 2 -20 4 -20 3 0 26 19 53 41 60 52 99 69 162 69 60 0 105 -32 122 -89 22 -73 -14 -143 -190 -365 -47 -60 -102 -127 -122 -149 l-35 -39 -143 226 c-79 125 -145 225 -147 223 -3 -2 3 -52 12 -111 8 -59 14 -109 12 -110 -8 -7 -440 -157 -443 -154 -1 2 -26 44 -54 93 -28 50 -51 83 -51 74 0 -13 51 -407 91 -697 7 -54 15 -82 23 -79 6 2 70 23 141 47 72 23 135 46 140 50 6 5 98 38 205 75 264 91 350 124 350 137 0 6 -18 39 -40 74 -22 35 -40 69 -40 75 0 6 48 73 107 148 188 240 243 340 243 444 0 32 -7 66 -19 87 -36 68 -136 110 -217 91z"
-                                            style="fill: rgb(255, 255, 255);" />
-                                    </g>
-                                    <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(115, 115, 115);"
-                                        transform="matrix(1, 0, 0, -1, 0, 0)" cx="1292.261" cy="-3289.017" rx="52.693"
-                                        ry="52.694" />
-                                    <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(153, 26, 230);"
-                                        transform="matrix(1, 0, 0, -1, 0, 0)" cx="1561.581" cy="-3376.838" rx="52.693"
-                                        ry="52.694" />
-                                </g>
-                            </svg>
+                         <img src="./imagens/svg/SVG CAT ANIMADO SALTO LOGO ASI CODE.svg" alt="">
                         </div>
                         <div class="text-initial-apresentation">
                             <div class="content-text-initial-apresentation">
@@ -144,6 +113,27 @@
                             <img src="./imagens/7ff1fbe8-237a-4148-970a-662a831d114c-PhotoRoom.png-PhotoRoom.png"
                                 alt="">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-portfolio" class="section-portfolio">
+            <div>
+                <div>
+                    <div class="card-port-front">
+                        <div class="card-port-back">
+                           <img src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-button-card">
+                    <div class="button-card-port-1">
+                        <button class="button-card-port-front"> GitHub
+                        </button>
+                    </div>
+                    <div class="button-card-port-1">
+                        <button class="button-card-port-back"> Preview
+                        </button>
                     </div>
                 </div>
             </div>

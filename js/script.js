@@ -17,7 +17,7 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 
 function getRandomIcon() {
-  
+
   const imgsArray = [
     "../imagens/icons/icon-.net-framework.png",
     "../imagens/icons/icon-angular.png",
@@ -47,8 +47,8 @@ function getRandomPosition() {
   const container = document.getElementById('container-exibi-icons');
   const widthContainer = container.clientWidth;
   const heightContainer = container.clientHeight;
-  const width =widthContainer-70;
-  const height =heightContainer-70;
+  const width = widthContainer - 100;
+  const height = heightContainer - 100;
   const x = Math.floor(Math.random() * width);
   const y = Math.floor(Math.random() * height);
   return { x, y };
@@ -78,4 +78,10 @@ function showIcon() {
   }, 2000);
 }
 
-setInterval(showIcon, 3000);
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+  
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
