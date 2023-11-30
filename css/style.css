@@ -5,9 +5,11 @@
   --color-infor-ligth: #FEFEFE;
   --color-infor-dark: #7B7B7B;
   --color-black: #000000;
+  --color-black-2: rgb(33, 33, 33);
   --color-onys: #3E3E3E;
   --color-gray: #7B7B7B;
   --color-light: #ffffff;
+  ---font-size-1:'Black Ops One', sans-serif;
   ---opacity: 50%;
   --padding-1: 5px;
   --box-shadow-onys: 0 1rem 2rem var(--color-onys);
@@ -153,6 +155,7 @@ body {
 }
 .icon {
   position: absolute;
+  opacity: var(---opacity);
   visibility: hidden;
 }
 .container-apresentation-initial-grid{
@@ -359,11 +362,14 @@ transform: rotate(10deg);
 /*==========Section Portfolio============*/
 .section-portfolio{
   width: 100%;
+  min-height: 100vh;
   height:100%;
+
 }
 .container-portfolio{
  width: 100%;
- height: 100%;
+ min-height: 100vh;
+ height:100%;
  padding: 3px;
  background-color: var(--color-black);
 }
@@ -399,11 +405,20 @@ transform: rotate(10deg);
   justify-content: center;
   gap: 10px;
 }
+.container-card-content{
+  opacity:var(---opacity);
+  transition: all 3.0s ease;
+}
+.container-card-content:hover{
+  opacity:100%;
+
+}
 .card-content{
   width: 300px;
   height: 400px;
 
 }
+
 .container-card-front{
   width: 100%;
   height: 100%;
@@ -430,12 +445,13 @@ background-color: var(--color-white);
 .card-port-back:hover{
   transform: scale(0.97);
  }
-.card-port-back #interrogation{
+.card-port-back .interrogation{
   position: absolute;
   top: 40%;
   width: 100px;
-  animation: interrogation 6s ease-out infinite;
+  animation: interrogation 6s ease-out ;
 }
+
 @keyframes interrogation {
   0% {
       transform: translatey(0px);
@@ -485,6 +501,33 @@ background-color: var(--color-white);
   width: 100%;
   height: 100%;
   background-color: transparent;
+}
+
+/*======Section About me=======*/
+.section-about-me{
+  width: 100%;
+  height: 100%;
+  background-color:var(--color-black-2);
+}
+.container-about-me{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content-about-me{
+  width: 100%;
+  height: 8vh;
+  padding: 30px;
+}
+.content-about-me h1{
+  font-size: 5rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Black Ops One', sans-serif;
+  background-color: transparent;
+  color: var(--color-white);
+  opacity: var(---opacity);
 }
 
 /*======Mediaquery=======*/

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header id="home-principal" class="header-menu">
+    <header  class="header-menu">
         <div class="header-container-row">
             <div class="header-row-name"><a href="#"><span>ASI <b>CODE</b></span></a>
             </div>
@@ -21,9 +21,9 @@
                         <span id="hamburger"></span>
                     </button>
                     <ul id="menu">
-                        <li><a href="#" onclick="scrollToSection('home-principal')">Home</a></li>
-                        <li><a href="#" onclick="scrollToSection('section-portfolio')">Portfólio</a></li>
-                        <li><a href="#">Sobre mim</a></li>
+                        <li><a href="#" data-section="home-principal">Home</a></li>
+                        <li><a href="#" data-section="section-portfolio">Portfólio</a></li>
+                        <li><a href="#" data-section="section-about-me">Sobre mim</a></li>                        
                         <li><a href="#">Acadêmico</a></li>
                         <li><a href="#">Contatos</a></li>
                         <li><a href="#">Projetos</a></li>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </header>
-    <main class="main-initial-apresentation">
+    <main id="home-principal" class="main-initial-apresentation">
         <section id="container-exibi-icons" class="section-initial-presentation">
             <div class="container-apresentation-initial-grid">
                 <div class="grid-text-initial-apresentation">
@@ -48,7 +48,7 @@
                                     <h1 class="text-presentation-initial-h1">Olá,comunidade</h1>
                                 </div>
                                 <div class="text-presentation-initial">
-                                    <p class="text-presentation-initial-p1">Sou <b>Desenvolvedor</b> de solftware full
+                                    <p class="text-presentation-initial-p1">Sou <b>Desenvolvedor</b> de software full
                                         stack</p>
                                 </div>
                                 <div class="text-presentation-initial">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="button-apresentation-initial-about-me">
+                        <div  class="button-apresentation-initial-about-me">
                             <div class="button-about-me-initial">
                                 <button class="btn-about-me-initial" href="#section-about-me"
                                     (click)="scrollToSection($event, 'section-about-me')">Saiba mais sobre mim!
@@ -124,12 +124,12 @@
                         <h1 class="portfolio-text">Portfólio</h1>
                     </div>
                     <div class="portfolio-card-row">
-                        <div class="container-card-contant">
+                        <div class="container-card-content">
                             <div class="card-content">
                                 <div class="container-card-front">
                                     <div class="card-port-front">
                                         <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
+                                           <img  class="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
                                            <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
                                         </div>
                                     </div>
@@ -147,299 +147,35 @@
                             </div>
                         </div>
                         <!--começa a repetição aqui  aqui -->
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-card-contant">
-                            <div class="card-content">
-                                <div class="container-card-front">
-                                    <div class="card-port-front">
-                                        <div class="card-port-back">
-                                           <img  id="interrogation" src="./imagens/svg/SVG INTERROGAÇÃO.svg" alt="">
-                                           <img id="cat" src="./imagens/cat asi code 01-PhotoRoom.png-PhotoRoom.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-button-card">
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> GitHub
-                                    </button>
-                                </div>
-                                <div class="button-card-port">
-                                    <button class="button-card-port-btn"> Preview
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                          <!--fim aqui -->
-                       
+                        <!--fim aqui -->
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-about-me" class="section-about-me">
+            <div class="container-about-me">
+                <div class="content-about-me">
+                    <h1>Sobre mim.</h1>
+                </div>
+                <div class="container-row-content-about-me-apresentation">
+                    <div  class="content-my-img-about-me">
+                        <div id="my-img-mask" class="my-img-about-me">
+                            <img src="./imagens/7ff1fbe8-237a-4148-970a-662a831d114c-PhotoRoom.png-PhotoRoom.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row-text-apresentation-name">
+                        <h1>Olá,Eu sou Edson Rodrigo Damasceno Lopes.</h1>
+                        <h2>Desenvolvedor de Software <b>Full Stack</b></h2>
+                    </div>
+                    <div class="row-text-apresentation">
+                        <p>Explorando o universo tecnológico, apaixonado por novas competências e soluções sofisticadas.
+                        </p>
+                        <p>Tenho 1 ano de experiência na área de desenvolvimento. Sou estudante de Sistemas de Informação e já vinha estudando e adquirindo conhecimentos de forma autônoma antes mesmo de entrar na faculdade.</p>
+                    </div>
+                </div>
+                <div>
 
                 </div>
-               
             </div>
         </section>
 
