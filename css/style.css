@@ -352,7 +352,7 @@ transform: rotate(10deg);
   position: absolute;
   border-right: 5px solid #991AE6 ;
   border-bottom: 5px solid #991AE6 ;
-  
+
 }
 .content-my-img img{
   width:400px;
@@ -364,7 +364,6 @@ transform: rotate(10deg);
   width: 100%;
   min-height: 100vh;
   height:100%;
-
 }
 .container-portfolio{
  width: 100%;
@@ -411,12 +410,10 @@ transform: rotate(10deg);
 }
 .container-card-content:hover{
   opacity:100%;
-
 }
 .card-content{
   width: 300px;
   height: 400px;
-
 }
 
 .container-card-front{
@@ -449,7 +446,10 @@ background-color: var(--color-white);
   position: absolute;
   top: 40%;
   width: 100px;
-  animation: interrogation 6s ease-out ;
+}
+.interrogationActive{
+
+  animation: interrogation 6s ease-out infinite ;
 }
 
 @keyframes interrogation {

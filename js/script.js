@@ -132,3 +132,17 @@ window.addEventListener("scroll", checkVisibility);
 window.addEventListener("resize", checkVisibility);
 window.addEventListener("resize", checkVisibility);
 window.addEventListener("load", checkVisibility);
+
+//Active mouseover em interrogação section portfolio
+const interrogationActive = document.querySelector('.card-port-front');
+
+function toggleInterrogationAnimation(event) {
+  const interrogations = document.querySelectorAll('.interrogation');
+
+  interrogations.forEach(interrogation => {
+    interrogation.classList.toggle('interrogationActive', event.type === 'mouseover');
+  });
+}
+
+interrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
+interrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
