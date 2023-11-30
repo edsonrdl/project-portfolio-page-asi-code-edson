@@ -44,6 +44,7 @@ function getRandomIcon() {
   return imgsArray[Math.floor(Math.random() * imgsArray.length)];
 };
 
+
 function getRandomPosition() {
   const container = document.getElementById('container-exibi-icons');
   const widthContainer = container.clientWidth;
@@ -53,17 +54,15 @@ function getRandomPosition() {
   const x = Math.floor(Math.random() * width);
   const y = Math.floor(Math.random() * height);
   return { x, y };
-};
+}
 
 function showIcon() {
   const imgSrc = getRandomIcon();
   const container = document.getElementById('container-exibi-icons');
 
-
   const imgElement = document.createElement('img');
   imgElement.className = 'icon';
   imgElement.setAttribute('src', imgSrc);
-
 
   const position = getRandomPosition();
   imgElement.style.left = position.x + 'px';
@@ -75,13 +74,40 @@ function showIcon() {
   setTimeout(() => {
     imgElement.style.visibility = 'hidden';
   }, 2000);
-};
-setInterval(showIcon, 3000);
+}
 
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  if (section) {
-  
-    section.scrollIntoView({ behavior: 'smooth' });
+function activateFunction() {
+
+  intervalId = setInterval(showIcon, 2000);
+}
+
+function deactivateFunction() {
+
+  clearInterval(intervalId);
+  console.log("Função desativada");
+}
+
+function checkVisibility() {
+  const myDiv = document.getElementById("container-exibi-icons");
+  const boundingBox = myDiv.getBoundingClientRect();
+
+
+  if (
+    boundingBox.top >= 0 &&
+    boundingBox.left >= 0 &&
+    boundingBox.bottom <= window.innerHeight &&
+    boundingBox.right <= window.innerWidth
+  ) {
+
+    activateFunction();
+  } else {
+
+    deactivateFunction();
   }
 }
+
+
+document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibility);
+document.getElementById("container-exibi-icons").addEventListener("mouseout", deactivateFunction);
+window.addEventListener("scroll", checkVisibility);
+window.addEventListener("resize", checkVisibility);
