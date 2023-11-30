@@ -19,7 +19,7 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 function getRandomIcon() {
 
-  const imgsArray = [
+  const IconsArray = [
     "../imagens/icons/icon-.net-framework.png",
     "../imagens/icons/icon-angula.png",
     "../imagens/icons/icon-c-sharp-logo.png",
@@ -41,11 +41,11 @@ function getRandomIcon() {
   ];
 
 
-  return imgsArray[Math.floor(Math.random() * imgsArray.length)];
+  return IconsArray[Math.floor(Math.random() * IconsArray.length)];
 };
 
 
-function getRandomPosition() {
+function getRandomPositionDisplay() {
   const container = document.getElementById('container-exibi-icons');
   const widthContainer = container.clientWidth;
   const heightContainer = container.clientHeight;
@@ -64,7 +64,7 @@ function showIcon() {
   imgElement.className = 'icon';
   imgElement.setAttribute('src', imgSrc);
 
-  const position = getRandomPosition();
+  const position = getRandomPositionDisplay();
   imgElement.style.left = position.x + 'px';
   imgElement.style.top = position.y + 'px';
   imgElement.style.visibility = 'visible';
@@ -76,20 +76,20 @@ function showIcon() {
   }, 2000);
 }
 
-function activateFunction() {
+function activateDisplayIcons() {
 
-  intervalId = setInterval(showIcon, 2000);
+  intervalId = setInterval(showIcon, 3000);
 }
 
-function deactivateFunction() {
+function deactivateDisplayIcons() {
 
   clearInterval(intervalId);
   console.log("Função desativada");
 }
 
 function checkVisibility() {
-  const myDiv = document.getElementById("container-exibi-icons");
-  const boundingBox = myDiv.getBoundingClientRect();
+  const mySectionDisplay = document.getElementById("container-exibi-icons");
+  const boundingBox = mySectionDisplay.getBoundingClientRect();
 
 
   if (
@@ -99,15 +99,17 @@ function checkVisibility() {
     boundingBox.right <= window.innerWidth
   ) {
 
-    activateFunction();
+    activateDisplayIcons();
   } else {
 
-    deactivateFunction();
+    deactivateDisplayIcons();
   }
 }
 
 
 document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibility);
-document.getElementById("container-exibi-icons").addEventListener("mouseout", deactivateFunction);
+document.getElementById("container-exibi-icons").addEventListener("mouseout", deactivateDisplayIcons);
 window.addEventListener("scroll", checkVisibility);
 window.addEventListener("resize", checkVisibility);
+window.addEventListener("resize", checkVisibility);
+window.addEventListener("load", checkVisibility);
