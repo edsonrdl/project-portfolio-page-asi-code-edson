@@ -1,3 +1,18 @@
+//Active animation logo
+const sectionInitialPresentationAsiCodeActive= document.querySelector('.section-initial-presentation');
+
+function toggleLogoAsiCodeAnimation(event) {
+  const logoAsiCode = document.querySelectorAll('.initial-logo-apresentation');
+
+  logoAsiCode.forEach(initialLogo => {
+    initialLogo.classList.toggle('logo-Active', event.type === 'mouseover');
+  });
+}
+
+sectionInitialPresentationAsiCodeActive.addEventListener('mouseover', toggleLogoAsiCodeAnimation);
+sectionInitialPresentationAsiCodeActive.addEventListener('mouseout', toggleLogoAsiCodeAnimation);
+
+
 //Menu mobile
 const btnMobile = document.getElementById('btn-mobile');
 
@@ -18,20 +33,19 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 //Scroll Suave navegação
 function scrollToSectionNav(event) {
-  // Evita que o link recarregue a página
+
   event.preventDefault();
 
-  // Obtém o valor do atributo data-section
+
   const sectionId = event.currentTarget.getAttribute('data-section');
 
-  // Realiza o scroll suave para a seção correspondente
+
   const section = document.getElementById(sectionId);
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
-// Adiciona o evento de clique aos links
 document.querySelectorAll('[data-section]').forEach(link => {
   link.addEventListener('click', scrollToSectionNav);
 });
@@ -93,18 +107,16 @@ function showIcon() {
 
   setTimeout(() => {
     imgElement.style.visibility = 'hidden';
-  }, 2000);
+  }, 3000);
 }
 
 function activateDisplayIcons() {
 
-  intervalId = setInterval(showIcon, 3000);
+  intervalId = setInterval(showIcon,3000);
 }
 
 function deactivateDisplayIcons() {
-
   clearInterval(intervalId);
-  console.log("Função desativada");
 }
 
 function checkVisibility() {
@@ -134,7 +146,7 @@ window.addEventListener("resize", checkVisibility);
 window.addEventListener("load", checkVisibility);
 
 //Active mouseover em interrogação section portfolio
-const interrogationActive = document.querySelector('.card-port-front');
+const sectionInterrogationActive = document.querySelector('.card-port-front');
 
 function toggleInterrogationAnimation(event) {
   const interrogations = document.querySelectorAll('.interrogation');
@@ -144,5 +156,5 @@ function toggleInterrogationAnimation(event) {
   });
 }
 
-interrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
-interrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
+sectionInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
+sectionInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);

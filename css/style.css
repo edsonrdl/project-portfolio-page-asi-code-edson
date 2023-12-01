@@ -132,7 +132,6 @@ body {
   color: var(--color-lavender-floral);
   font-size: 1.3rem;
 }
-
 /*======Section initial apresentation=======*/
 .main-initial-apresentation{
   width: 100%;
@@ -185,6 +184,8 @@ body {
   width: 400px;
   height:auto;
   top: 60px;
+}
+.logo-Active{
   animation: floatLogo 6s ease-out infinite;
 }
 @keyframes floatLogo {
