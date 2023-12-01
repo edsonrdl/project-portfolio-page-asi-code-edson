@@ -168,6 +168,13 @@ sectionInterrogationActive.addEventListener('mouseout', toggleInterrogationAnima
 
 //Download CV
  function downloadCv() {
+  const displayCatDownload = document.querySelector('.img-cat-display');
+
+  displayCatDownload.classList.add('img-cat-animation');
+  setTimeout(() => {
+    displayCatDownload.classList.remove('img-cat-animation');
+  }, 4000);
+
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'CV_Edson_Rodrigo_PT_BR.pdf.pdf', true);
   xhr.responseType = 'blob';
@@ -178,4 +185,4 @@ sectionInterrogationActive.addEventListener('mouseout', toggleInterrogationAnima
       }
   };
   xhr.send();
-}
+};
