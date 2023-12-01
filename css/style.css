@@ -8,7 +8,7 @@
   --color-black-2: rgb(33, 33, 33);
   --color-onys: #3E3E3E;
   --color-gray: #7B7B7B;
-  --color-light: #ffffff;
+  --color-light: #050404;
   ---font-size-1:'Black Ops One', sans-serif;
   ---opacity: 50%;
   --padding-1: 5px;
@@ -224,25 +224,28 @@ body {
   margin-left: 10px;
   width: 100%;
 }
-.text-presentation-initial .text-presentation-initial-h1{
+.text-presentation-initial .text-presentation-initial-p1{
   font-size: 3.8rem;
   margin-left: 100px;
   color: var(--color-white);
   opacity: var(---opacity);
+  font-family: Arial, sans-serif;
 }
-.text-presentation-initial .text-presentation-initial-p1{
+.text-presentation-initial .text-presentation-initial-p2{
   font-size: 4.5rem;
   margin-left: 0;
   margin-top: 30px;
   color: var(--color-white);
   opacity: var(---opacity);
+  font-family: Arial, sans-serif;
 }
-.text-presentation-initial .text-presentation-initial-p2{
+.text-presentation-initial .text-presentation-initial-p3{
   font-size: 3.8rem;
   margin-left: 100px;
   margin-top: 30px;
   color: var(--color-white);
   opacity: var(---opacity);
+  font-family: Arial, sans-serif;
 }
 .button-apresentation-initial-about-me{
   position: relative;
@@ -397,6 +400,14 @@ transform: rotate(10deg);
   color: var(--color-white);
   opacity: var(---opacity);
 }
+.portfolio-text b {
+  font-size: 5rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Black Ops One', sans-serif;
+  background-color: transparent;
+  color: var(--color-blue-violet);
+}
 .portfolio-card-row{
   display: flex;
   flex-wrap: wrap;
@@ -508,18 +519,21 @@ background-color: var(--color-white);
 .section-about-me{
   width: 100%;
   height: 100%;
+  padding: 30px;
   background-color:var(--color-black-2);
 }
 .container-about-me{
   width: 100%;
   height: 100%;
   display: flex;
+  margin-top: 30px;
   flex-direction: column;
+  align-items: center;
 }
 .content-about-me{
   width: 100%;
   height: 8vh;
-  padding: 30px;
+
 }
 .content-about-me h1{
   font-size: 5rem;
@@ -530,7 +544,156 @@ background-color: var(--color-white);
   color: var(--color-white);
   opacity: var(---opacity);
 }
+.content-about-me b{
+  font-size: 5rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Black Ops One', sans-serif;
+  background-color: transparent;
+  color: var(--color-blue-violet);
+}
+.container-row-content-about-me-apresentation{
+  margin-top: 30px;
+  height: 150px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.content-my-img-about-me-circle{
+  display: flex;
+  align-items: center;
+  width: 100px;
+  clip-path: circle();
+  background-color: transparent;
+}
+.my-img-mask{
+  width: 100%;
+  height: 100%;
+}
+.content-my-img-about-me-circle img{
+  width: 100px;
+  clip-path: circle();
+  transform: scaleX(-1);
+  background-color: var(--color-black);
+  opacity: var(---opacity);
+}
+.container-texts{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.row-text-apresentation-name-function{
+  margin-left: 20px;
+  width: 100%;
+}
+.row-text-apresentation-name-function{
+  margin-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid #991AE6;
+}
+.row-text-apresentation-name-function h1{
+  font-size: 2rem;
+  margin-left: 10px;
+  color: var(--color-infor-ligth);
+  font-family: Arial, sans-serif;
+}
+.row-text-apresentation-name-function b{
+  color: var(--color-blue-violet);
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+.row-text-apresentation-name-function h2{
+  color: var(--color-infor-ligth);
+  font-family: Arial, sans-serif;
+}
+.row-text-apresentation-description h3{
+  font-size: 1.5rem;
+  color: var(--color-infor-dark);
+  font-family: Arial, sans-serif;
+}
+.row-text-apresentation-description p{
+  font-size: 1.2rem;
+  color: var(--color-infor-dark);
+  font-family: Arial, sans-serif;
+}
+.container-row-infor-guys{
+  width: 100%;
+  height: 50vh;
+  padding: 100px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ gap: 10px;
+}
+.row-information-guys-details{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.infor-guys-text{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.row-information-guys-details h1{
+  color: var(--color-infor-ligth);
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+.container-information-guys-details{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: flex-start;
+}
+.details-column dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
 
+.details-column dt {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: var(--color-infor-dark);
+}
+
+.details-column dd {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-infor-ligth);
+}
+.content-button-download-cv-front{
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+ 
+}
+.content-button-download-cv-back{
+  width: 100%;
+  height: 100%;
+  transform: scale(0.98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: yellow;
+}
+
+.row-information-details-technician{
+  width: 100%;
+
+}
 /*======Mediaquery=======*/
 /*======Menu mobile=======*/
 @media (max-width: 600px) {

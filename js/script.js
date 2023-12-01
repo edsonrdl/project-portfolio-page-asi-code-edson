@@ -52,6 +52,9 @@ document.querySelectorAll('[data-section]').forEach(link => {
 
 
 //Exibir icones
+
+let intervalId; 
+let timeoutId;
 function getRandomIcon() {
 
   const IconsArray = [
@@ -88,7 +91,7 @@ function getRandomPositionDisplay() {
   const x = Math.floor(Math.random() * width);
   const y = Math.floor(Math.random() * height);
   return { x, y };
-}
+};
 
 function showIcon() {
   const imgSrc = getRandomIcon();
@@ -105,24 +108,31 @@ function showIcon() {
 
   container.appendChild(imgElement);
 
+
   setTimeout(() => {
     imgElement.style.visibility = 'hidden';
   }, 3000);
-}
+};
 
 function activateDisplayIcons() {
-
-  intervalId = setInterval(showIcon,3000);
-}
+  if (!intervalId) {
+    intervalId = setInterval(() => {
+      // Limpe o último timeout antes de iniciar um novo
+      clearTimeout(timeoutId);
+      showIcon();
+    }, 3000);
+  }
+};
 
 function deactivateDisplayIcons() {
   clearInterval(intervalId);
+  intervalId = null;
+  console.log("Desativado");
 }
 
 function checkVisibility() {
   const mySectionDisplay = document.getElementById("container-exibi-icons");
   const boundingBox = mySectionDisplay.getBoundingClientRect();
-
 
   if (
     boundingBox.top >= 0 &&
@@ -130,10 +140,8 @@ function checkVisibility() {
     boundingBox.bottom <= window.innerHeight &&
     boundingBox.right <= window.innerWidth
   ) {
-
     activateDisplayIcons();
   } else {
-
     deactivateDisplayIcons();
   }
 }
@@ -141,7 +149,6 @@ function checkVisibility() {
 document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibility);
 document.getElementById("container-exibi-icons").addEventListener("mouseout", deactivateDisplayIcons);
 window.addEventListener("scroll", checkVisibility);
-window.addEventListener("resize", checkVisibility);
 window.addEventListener("resize", checkVisibility);
 window.addEventListener("load", checkVisibility);
 
@@ -158,3 +165,17 @@ function toggleInterrogationAnimation(event) {
 
 sectionInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
 sectionInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
+
+//Download CV
+ function downloadCv() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'CV_Edson_Rodrigo_PT_BR.pdf.pdf', true);
+  xhr.responseType = 'blob';
+  xhr.onload = function() {
+      if (this.status === 200) {
+          var blob = this.response;
+          saveAs(blob, "seu_cv.pdf");
+      }
+  };
+  xhr.send();
+}
