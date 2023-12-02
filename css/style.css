@@ -754,6 +754,7 @@ display: none;
   justify-content: space-around;
   border-radius: 20px;
   background-color: var(--color-gray);
+  box-shadow: var(--box-shadow-onys);
 }
 .content-button-download-cv .span-download{
   width: 100%;
@@ -763,7 +764,7 @@ display: none;
   justify-content: space-between;
   font-size: 2rem;
   font-family: 'Black Ops One', sans-serif;
-  color: var(--color-onys);
+background-color: transparent;
 }
 .btn-download-cv{
   width: 60px;
@@ -771,6 +772,10 @@ display: none;
   border-radius: 30px;
   background-color: var(--color-blue-violet);
   cursor: pointer;
+
+}
+.btn-download-cv:hover{
+box-shadow: var(--box-shadow-violet);
 
 }
 #material-symbols-outlined-download{
@@ -807,6 +812,8 @@ display: none;
   flex-direction: column;
   background-color: var(--box-shadow-onys);
   border: 2px solid #7B7B7B;
+  box-shadow: var(--box-shadow-onys);
+  opacity: var(---opacity);
 }
 .content-information-details-technician{
   width: 100%;
@@ -837,6 +844,75 @@ display: none;
   font-size: 2rem;
   font-family: Arial, sans-serif;
   color: var(--color-infor-dark);
+}
+.conteiner-skills-competence{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 100px;
+  grid-template-areas: "content-experiential personal-education personal-interests"
+                            "skills-developer skills-developer skills-developer";
+}
+.content-experiential{
+  width: 100%;
+  grid-area: content-experiential;
+  text-align: start;
+
+}
+.content-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+  height:50px;
+}
+.conteiner-skills-competence .material-symbols-outlined{
+color: var(--color-blue-violet);
+}
+.content-title h1{
+font-size: 2rem;
+font-family: Arial, sans-serif;
+color: var(--color-blue-violet);
+opacity: var(---opacity);
+border-bottom: 1px solid #7B7B7B;
+}
+.content-experiential-text ,.content-education-text ,.content-interests-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+}
+.content-experiential-text p ,.content-education-text p ,.content-interests-text p{
+ font-size: 1.2rem;
+ font-family: Arial, sans-serif;
+ color: var(--color-gray);
+ margin: 0 0 20px; 
+}
+.personal-education{
+  width: 100%;
+  grid-area: personal-education;
+
+}
+
+.personal-interests{
+  grid-area: personal-interests;
+
+}
+.skills-developer{
+  width: 100%;
+  height: 100%;
+  padding: 0px 100px 0px 100px;
+  grid-area: skills-developer;
+
 }
 /*======Mediaquery=======*/
 /*======Menu mobile=======*/
