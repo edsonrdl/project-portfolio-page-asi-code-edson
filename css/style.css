@@ -13,6 +13,7 @@
   ---opacity: 50%;
   --padding-1: 5px;
   --box-shadow-onys: 0 1rem 2rem var(--color-onys);
+  --box-shadow-onys-2: 1rem 1rem 0.7rem var(--color-onys);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
 * {
@@ -851,7 +852,7 @@ box-shadow: var(--box-shadow-violet);
   padding: 10px;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   gap: 100px;
   grid-template-areas: "content-experiential personal-education personal-interests"
                             "skills-developer skills-developer skills-developer";
@@ -892,7 +893,7 @@ border-bottom: 1px solid #7B7B7B;
 
 }
 .content-experiential-text p ,.content-education-text p ,.content-interests-text p{
- font-size: 1.2rem;
+ font-size: 1rem;
  font-family: Arial, sans-serif;
  color: var(--color-gray);
  margin: 0 0 20px; 
@@ -910,8 +911,40 @@ border-bottom: 1px solid #7B7B7B;
 .skills-developer{
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0px 100px 0px 100px;
   grid-area: skills-developer;
+ 
+}
+.content-skills-developer{
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  gap: 30px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap:wrap ;
+   justify-content: center;
+
+}
+.content-technology-developer{
+  width: 100px;
+  height:130px;
+}
+.content-technology-icon-name{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-shadow: var(--box-shadow-onys-2);
+}
+.content-technology-icon-name h2{
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  color: var(--color-gray);
 
 }
 /*======Mediaquery=======*/
