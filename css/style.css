@@ -7,12 +7,14 @@
   --color-black: #000000;
   --color-black-2: rgb(33, 33, 33);
   --color-onys: #3E3E3E;
+  --color-shadow: #161616;
   --color-gray: #7B7B7B;
   --color-light: #050404;
   ---font-size-1:'Black Ops One', sans-serif;
   ---opacity: 50%;
   --padding-1: 5px;
   --box-shadow-onys: 0 1rem 2rem var(--color-onys);
+  --box-shadow-back: 0 1rem 2rem var(--color-shadow);
   --box-shadow-onys-2: 1rem 1rem 0.7rem var(--color-onys);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
@@ -43,7 +45,7 @@ body {
   width: 100%;
   height: 7vh;
   background: rgb(37, 36, 36);
-  background: linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, #3e3e3e 0%, rgba(0,0,0,1) 100%);
   z-index: 100;
 }
 
@@ -755,7 +757,7 @@ display: none;
   justify-content: space-around;
   border-radius: 20px;
   background-color: var(--color-gray);
-  box-shadow: var(--box-shadow-onys);
+  box-shadow: var(--box-shadow-back);
 }
 .content-button-download-cv .span-download{
   width: 100%;
@@ -765,7 +767,8 @@ display: none;
   justify-content: space-between;
   font-size: 2rem;
   font-family: 'Black Ops One', sans-serif;
-background-color: transparent;
+  color: var(--color-infor-ligth);
+  background-color: transparent;
 }
 .btn-download-cv{
   width: 60px;
@@ -810,9 +813,9 @@ box-shadow: var(--box-shadow-violet);
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-onys);
+  background-color: transparent;
+  box-shadow: var(--box-shadow-back);
 
-  box-shadow: var(--box-shadow-onys);
   padding: 10px;
 }
 .information-asi-code-logo{
@@ -893,9 +896,9 @@ box-shadow: var(--box-shadow-violet);
   padding: 10px;
   display: flex;
   flex-direction: column;
-  background-color: var(--box-shadow-onys);
+  background-color:transparent;
   border: 2px solid #7B7B7B;
-  box-shadow: var(--box-shadow-onys);
+  box-shadow: var(--box-shadow-back);
   opacity: var(---opacity);
 }
 .content-information-details-technician{
@@ -1021,10 +1024,133 @@ height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-box-shadow: var(--box-shadow-onys-2);
+box-shadow: var(--box-shadow-back);
 }
 .content-technology-icon-name h2{
   font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  color: var(--color-gray);
+
+}
+/*======Section contacts=======*/
+.section-contatcs{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 100px;
+  background: linear-gradient(135deg, rgba(62,62,62,1) 0%, rgba(5,4,4,1) 100%);
+}
+.text-contact-apresentation-title{
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-contact h1{
+  font-size: 5rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Black Ops One', sans-serif;
+  background-color: transparent;
+  color: var(--color-white);
+  opacity: var(---opacity);
+}
+.title-contact b{
+  font-size: 5rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Black Ops One', sans-serif;
+  background-color: transparent;
+  color: var(--color-blue-violet);
+}
+.grid-contacts{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  gap: 50px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: "column-text-final-area column-contatcs-area";
+}
+.column-text-final{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: column-text-final-area;
+}
+.text-welcome{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.text-welcome h2{
+  font-size: 4rem;
+  font-family: Arial, sans-serif;
+  color: var(--color-infor-ligth);
+}
+.text-welcome h3{
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  color: var(--color-infor-dark);
+}
+.text-final{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 0px 50px 0px 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.text-final p{
+  font-size: 1.5rem;
+  padding: 0px 10px 0px 10px;
+  font-family: Arial, sans-serif;
+  color: var(--color-infor-dark);
+}
+.column-contatcs{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0px 30px 0px 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: column-contatcs-area;
+  border-radius: 10px;
+  box-shadow:var(--box-shadow-back);
+}
+.text-contatcs-conect{
+  width: 100%;
+  height: 70px;
+}
+.text-conect-final{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text-conect-final h1{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  color: var(--color-gray);
+
+}
+.text-conect-final p{
+  font-size: 1.5rem;
   font-family: Arial, sans-serif;
   color: var(--color-gray);
 
