@@ -756,7 +756,6 @@ display: none;
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
-  background-color: var(--color-gray);
   box-shadow: var(--box-shadow-back);
 }
 .content-button-download-cv .span-download{
@@ -897,7 +896,6 @@ box-shadow: var(--box-shadow-violet);
   display: flex;
   flex-direction: column;
   background-color:transparent;
-  border: 2px solid #7B7B7B;
   box-shadow: var(--box-shadow-back);
   opacity: var(---opacity);
 }
