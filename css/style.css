@@ -262,16 +262,14 @@ body {
   align-items: center;
   background-color:var(--color-blue-violet) ;
   border-radius: 50px;
-  border: 5px solid #c5c5c5;
   padding: 5px;
   opacity: 80%;
   bottom: 0;
-  box-shadow: var(--box-shadow-onys);
+  box-shadow: var(--box-shadow-back);
   transition: all 0.3s ease;
 }
 .button-about-me-initial:hover{
   box-shadow: var(--box-shadow-violet);
-  border: 3px solid #ffffff;
 }
 .btn-about-me-initial{
   height: 100%;
@@ -311,12 +309,12 @@ body {
 .social-icons-initial-apresentation{
   width: 30px;
 }
-.social-icons-initial-apresentation .bi-github,.social-icons-initial-apresentation .fa-linkedin-in,.social-icons-initial-apresentation .fa-instagram{
+.bi-github, .fa-linkedin-in,.fa-instagram,.bi-whatsapp {
 color: var(--color-gray);
 transition:all 0.3s ease ;
 transition: transform 0.3s ease;
 }
-.social-icons-initial-apresentation .bi-github:hover,.social-icons-initial-apresentation .fa-linkedin-in:hover,.social-icons-initial-apresentation .fa-instagram:hover{
+.bi-github:hover, .fa-linkedin-in:hover, .fa-instagram:hover ,.bi-whatsapp:hover{
 color: #ffffff;
 transform: translatey(-5px);
 transform: rotate(10deg);
@@ -1130,7 +1128,7 @@ box-shadow: var(--box-shadow-back);
 }
 .text-contatcs-conect{
   width: 100%;
-  height: 70px;
+  height:auto;
 }
 .text-conect-final{
   width: 100%;
@@ -1141,18 +1139,120 @@ box-shadow: var(--box-shadow-back);
   align-items: center;
 }
 .text-conect-final h1{
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 10px;
   font-family: Arial, sans-serif;
   color: var(--color-gray);
 
 }
 .text-conect-final p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Arial, sans-serif;
   color: var(--color-gray);
+}
+.contacts-information{
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-around;
+  opacity: var(---opacity);
+}
+.contacts-information h3 ,.contacts-information p{
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: var(--color-infor-ligth);
+  font-family: Arial, sans-serif;
 
 }
+.contacts-information .material-symbols-outlined{
+  color: var(--color-infor-dark);
+  cursor: pointer;
+}
+.contacts-information .material-symbols-outlined:hover{
+  color: var(--color-white);
+  transform: translatey(-5px);
+  transform: rotate(10deg);
+}
+.contact-email{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.contact-phone-number{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.contact-linkedin{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 5px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.contact-github{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.contact-instagram-guys{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.contact-instagram-asi-code{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.contact-message-icon-whatsapp{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid  #7B7B7B;
+}
+.social-icon-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-message-icon-whatsapp svg{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
 /*======Mediaquery=======*/
 /*======Menu mobile=======*/
 @media (max-width: 600px) {
