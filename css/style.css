@@ -1257,7 +1257,15 @@ box-shadow: var(--box-shadow-back);
   }
 
 /*======Mediaquery=======*/
-/*======Menu mobile=======*/
+/*======Menu mobile 1024px=======*/
+@media (max-width: 1024px) {
+
+}
+/*======Menu mobile 768px=======*/
+@media (max-width: 768px) {
+
+}
+/*======Menu mobile 600px=======*/
 @media (max-width: 600px) {
   .header-container-row {
     display: flex;
@@ -1354,3 +1362,4 @@ box-shadow: var(--box-shadow-back);
     top: -7px;
   }
 }
+
