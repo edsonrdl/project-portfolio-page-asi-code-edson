@@ -1,16 +1,18 @@
 //Active animation logo
-const sectionInitialPresentationAsiCodeActive= document.querySelector('.section-initial-presentation');
+const sectionInitialPresentationAsiCodeActive = document.querySelector('#container-exibi-icons');
 
-function toggleLogoAsiCodeAnimation(event) {
-  const logoAsiCode = document.querySelectorAll('.initial-logo-apresentation');
-
-  logoAsiCode.forEach(initialLogo => {
-    initialLogo.classList.toggle('logo-Active', event.type === 'mouseover');
-  });
+function activeLogoAsiCodeAnimation() {
+  const logoAsiCode = document.querySelector('.initial-logo-apresentation');
+  logoAsiCode.classList.add('logo-Active');
 }
 
-sectionInitialPresentationAsiCodeActive.addEventListener('mouseover', toggleLogoAsiCodeAnimation);
-sectionInitialPresentationAsiCodeActive.addEventListener('mouseout', toggleLogoAsiCodeAnimation);
+function deactivateLogoAsiCodeAnimation() {
+  const logoAsiCode = document.querySelector('.initial-logo-apresentation');
+  logoAsiCode.classList.remove('logo-Active');
+}
+
+sectionInitialPresentationAsiCodeActive.addEventListener('mouseover', activeLogoAsiCodeAnimation);
+sectionInitialPresentationAsiCodeActive.addEventListener('mouseout', deactivateLogoAsiCodeAnimation);
 
 
 //Menu mobile
@@ -129,7 +131,7 @@ function deactivateDisplayIcons() {
   console.log("Desativado");
 }
 
-function checkVisibility() {
+function checkVisibilityDisplayShowIcons() {
   const mySectionDisplay = document.getElementById("container-exibi-icons");
   const boundingBox = mySectionDisplay.getBoundingClientRect();
 
@@ -154,16 +156,17 @@ function checkVisibility() {
   } else {
     deactivateDisplayIcons();
   }
-}
+};
 
-document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibility);
-document.getElementById("container-exibi-icons").addEventListener("mouseout", checkVisibility);
-window.addEventListener("scroll", checkVisibility);
-window.addEventListener("resize", checkVisibility);
-window.addEventListener("load", checkVisibility);
+document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibilityDisplayShowIcons);
+document.getElementById("container-exibi-icons").addEventListener("mouseout", checkVisibilityDisplayShowIcons);
+window.addEventListener("scroll", checkVisibilityDisplayShowIcons);
+window.addEventListener("resize", checkVisibilityDisplayShowIcons);
+window.addEventListener("load", checkVisibilityDisplayShowIcons);
 
 //Active mouseover em interrogação section portfolio
-const sectionInterrogationActive = document.querySelector('.card-port-front');
+const cardInterrogationActive = document.querySelector('.card-port-front');
+console.log(cardInterrogationActive);
 
 function toggleInterrogationAnimation(event) {
   const interrogations = document.querySelectorAll('.interrogation');
@@ -173,8 +176,8 @@ function toggleInterrogationAnimation(event) {
   });
 }
 
-sectionInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
-sectionInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
+cardInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
+cardInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
 
 //Download CV
  function downloadCv() {

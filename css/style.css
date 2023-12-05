@@ -439,7 +439,7 @@ transform: rotate(10deg);
 .card-port-front{
   width: 100%;
   height: 100%;
-background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 .card-port-back{
   position: relative;
@@ -507,14 +507,20 @@ background-color: var(--color-white);
 }
  .button-card-port-btn{
   cursor: pointer;
-  color:var(--color-light);
+  color:var(--color-infor-ligth);
   font-size: 1.2rem;
   font-family: 'Black Ops One', sans-serif;
   width: 100%;
   height: 100%;
   background-color: transparent;
 }
+.button-card-port:first-child .button-card-port-btn:hover {
+  color:var(--color-blue-violet);
+}
 
+.button-card-port:last-child .button-card-port-btn:hover {
+  color:var(--color-blue-violet);
+}
 /*======Section About me=======*/
 .section-about-me{
   width: 100%;
@@ -965,7 +971,6 @@ border-bottom: 1px solid #7B7B7B;
 .content-experiential-text ,.content-education-text ,.content-interests-text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -973,7 +978,7 @@ border-bottom: 1px solid #7B7B7B;
 
 }
 .content-experiential-text p ,.content-education-text p ,.content-interests-text p{
- font-size: 1rem;
+ font-size: 1.2rem;
  font-family: Arial, sans-serif;
  color: var(--color-gray);
  margin: 0 0 20px; 
