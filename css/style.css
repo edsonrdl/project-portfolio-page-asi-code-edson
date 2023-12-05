@@ -382,6 +382,7 @@ transform: rotate(10deg);
   height: 100%;
   display: flex;
   margin-top: 70px;
+  gap: 10px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -412,8 +413,6 @@ transform: rotate(10deg);
 .portfolio-card-row{
   display: flex;
   flex-wrap: wrap;
-  padding: 40px;
-  margin-top: 50px;
   justify-content: center;
   gap: 10px;
 }
