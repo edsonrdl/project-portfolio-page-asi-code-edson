@@ -117,7 +117,6 @@ function showIcon() {
 function activateDisplayIcons() {
   if (!intervalId) {
     intervalId = setInterval(() => {
-      // Limpe o último timeout antes de iniciar um novo
       clearTimeout(timeoutId);
       showIcon();
     }, 3000);
@@ -134,12 +133,23 @@ function checkVisibility() {
   const mySectionDisplay = document.getElementById("container-exibi-icons");
   const boundingBox = mySectionDisplay.getBoundingClientRect();
 
-  if (
-    boundingBox.top >= 0 &&
-    boundingBox.left >= 0 &&
-    boundingBox.bottom <= window.innerHeight &&
-    boundingBox.right <= window.innerWidth
-  ) {
+  const threshold = 0.5; 
+
+  const isPartiallyVisible =
+    boundingBox.bottom >= 0 &&
+    boundingBox.right >= 0 &&
+    boundingBox.top <= window.innerHeight &&
+    boundingBox.left <= window.innerWidth;
+
+  const verticalVisibility =
+    boundingBox.top <= window.innerHeight * (1 - threshold) &&
+    boundingBox.bottom >= window.innerHeight * threshold;
+
+  const horizontalVisibility =
+    boundingBox.left <= window.innerWidth * (1 - threshold) &&
+    boundingBox.right >= window.innerWidth * threshold;
+
+  if (isPartiallyVisible && verticalVisibility && horizontalVisibility) {
     activateDisplayIcons();
   } else {
     deactivateDisplayIcons();
@@ -147,7 +157,7 @@ function checkVisibility() {
 }
 
 document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibility);
-document.getElementById("container-exibi-icons").addEventListener("mouseout", deactivateDisplayIcons);
+document.getElementById("container-exibi-icons").addEventListener("mouseout", checkVisibility);
 window.addEventListener("scroll", checkVisibility);
 window.addEventListener("resize", checkVisibility);
 window.addEventListener("load", checkVisibility);
