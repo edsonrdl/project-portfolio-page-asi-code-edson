@@ -460,7 +460,6 @@ transform: rotate(10deg);
   width: 100px;
 }
 .interrogationActive{
-
   animation: interrogation 6s ease-out infinite ;
 }
 

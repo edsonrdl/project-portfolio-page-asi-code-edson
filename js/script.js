@@ -158,26 +158,60 @@ function checkVisibilityDisplayShowIcons() {
   }
 };
 
-document.getElementById("container-exibi-icons").addEventListener("mouseover", checkVisibilityDisplayShowIcons);
-document.getElementById("container-exibi-icons").addEventListener("mouseout", checkVisibilityDisplayShowIcons);
+
+document.getElementById("container-exibi-icons").addEventListener("mouseenter", checkVisibilityDisplayShowIcons);
+document.getElementById("container-exibi-icons").addEventListener("mouseleave", checkVisibilityDisplayShowIcons);
 window.addEventListener("scroll", checkVisibilityDisplayShowIcons);
 window.addEventListener("resize", checkVisibilityDisplayShowIcons);
 window.addEventListener("load", checkVisibilityDisplayShowIcons);
 
 //Active mouseover em interrogação section portfolio
-const cardInterrogationActive = document.querySelector('.card-port-front');
-console.log(cardInterrogationActive);
+const cardContainers = document.querySelectorAll('.card-port-front');
 
-function toggleInterrogationAnimation(event) {
-  const interrogations = document.querySelectorAll('.interrogation');
+// Adiciona ouvintes de eventos a cada elemento
+cardContainers.forEach(container => {
+ const interrogationActive =container.addEventListener('mouseover', handleInterrogationActive);
+ const interrogationDesactivate =container.addEventListener('mouseout', handleInterrogationDesactivate);
+});
 
-  interrogations.forEach(interrogation => {
-    interrogation.classList.toggle('interrogationActive', event.type === 'mouseover');
-  });
+function handleInterrogationActive(event) {
+  const container = event.currentTarget.closest('.container-card-content');
+
+  if (container) {
+    const containerId = container.id;
+    console.log(containerId);
+
+    const interrogationElement = container.querySelector('.interrogation');
+    console.log(interrogationElement);
+
+    interrogationElement.classList.add('interrogationActive');
+  }
+}
+function handleInterrogationDesactivate(event) {
+  const container = event.currentTarget.closest('.container-card-content');
+
+  if (container) {
+    const containerId = container.id;
+    console.log(containerId);
+
+    const interrogationElement = container.querySelector('.interrogation');
+    console.log(interrogationElement);
+
+    interrogationElement.classList.remove('interrogationActive');
+  }
 }
 
-cardInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
-cardInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
+// const cardInterrogationActive = document.querySelectorAll('.container-card-content');
+
+// function toggleInterrogationAnimation(event) {
+//   const id = event.currentTarget.id;
+//   console.log( id);
+//   const targetElement = document.getElementById(id);
+//   targetElement.classList.add('interrogationActive');
+// };
+
+// cardInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
+// cardInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
 
 //Download CV
  function downloadCv() {
