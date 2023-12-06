@@ -12,6 +12,7 @@
   ---font-size-title: 3rem;
   ---opacity: 50%;
   ---margin-top-title: 45px;
+  --padding-left-right: 0px 30px 0px 30px;
   ---heigth-top-title: 4rem;
   ---opacity-light: 80%;
   --box-shadow-back: 0 1rem 2rem var(--color-shadow);
@@ -115,6 +116,8 @@ body {
 /*======Section initial apresentation=======*/
 .main-initial-apresentation{
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background: rgb(142, 142, 142);
 }
 .section-initial-presentation{
@@ -496,33 +499,32 @@ transform: rotate(10deg);
 .section-about-me{
   width: 100%;
   height: 100%;
-  padding: 30px;
   background-color:var(--color-black-2);
 }
 .container-about-me{
   width: 100%;
   height: 100%;
+  padding: 5px 0px 5px 0px;
+  margin-top: var(---margin-top-title);
   display: flex;
-  margin-top: 30px;
   flex-direction: column;
   align-items: center;
 }
 .content-about-me{
   width: 100%;
-  height: 8vh;
-
+  height: var(---heigth-top-title);
 }
 .content-about-me h1{
-  font-size: 5rem;
+  font-size: var(---font-size-title);
   text-align: center;
   cursor: pointer;
-  font-family: 'Black Ops One', sans-serif;
+  font-family: var(---font-family-black-ops-one);
   background-color: transparent;
   color: var(--color-white);
   opacity: var(---opacity);
 }
 .content-about-me b{
-  font-size: 5rem;
+  font-size:var(---font-size-title);
   text-align: center;
   cursor: pointer;
   font-family: 'Black Ops One', sans-serif;
@@ -530,9 +532,8 @@ transform: rotate(10deg);
   color: var(--color-blue-violet);
 }
 .container-row-content-about-me-apresentation{
-  margin-top: 30px;
-  height: 150px;
-  width: 90%;
+  height:auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -582,7 +583,7 @@ transform: rotate(10deg);
 }
 .row-text-apresentation-name-function b{
   color: var(--color-blue-violet);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-name-function h2{
@@ -590,60 +591,58 @@ transform: rotate(10deg);
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-description h3{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-gray);
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-description p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-gray);
   font-family: Arial, sans-serif;
 }
 .container-row-infor-guys{
   width: 100%;
-  height: 50vh;
-  padding: 50px 200px 50px 200px;
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- gap: 10px;
+  height: 350px;
+  padding:  0px 30px  0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 .row-information-guys-details{
   width: 100%;
   height: 100%;
   display: flex;
-  margin-left: 150px;
   flex-direction: column;
   justify-content: space-between;
 }
 .infor-guys-text{
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .row-information-guys-details h1{
   color: var(--color-white);
   font-size: 1.5rem;
-  font-family: Arial, sans-serif;
+  font-family: var(---font-family-arial);
 }
 .container-information-guys-details{
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-  justify-content: flex-start;
+width: 100%;
+height: 100%;
+padding: var(--padding-left-right);
 }
-.details-column dl {
+.container-information-guys-details dl {
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 10px;
 }
-
-.details-column dt {
+.container-information-guys-details dt {
   font-weight: bold;
-  font-family: Arial, sans-serif;
+  font-family:var(---font-family-arial);
   color: var(--color-gray);
 }
-
-.details-column dd {
+.container-information-guys-details dd {
   margin: 0;
   font-family: Arial, sans-serif;
   color: var(--color-white);
@@ -651,7 +650,7 @@ transform: rotate(10deg);
 .container-button-download-cv{
   position: relative;
   width: 300px;
-  height: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -672,20 +671,13 @@ display: none;
 @keyframes catDownload {
   0% {
     opacity: 0%;
-   
-    
   }
-
-
   50% {
     opacity: 50%;
- 
   }
- 
   100% {
     opacity: 0%;
   }
-
 }
 .img-cat-animation span {
   position: absolute;
@@ -727,6 +719,7 @@ display: none;
   height: 50px;
   display: flex;
   padding: 5px;
+  margin-top: calc(100% -50px);
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
