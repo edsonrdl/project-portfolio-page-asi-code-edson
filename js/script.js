@@ -168,10 +168,9 @@ window.addEventListener("load", checkVisibilityDisplayShowIcons);
 //Active mouseover em interrogação section portfolio
 const cardContainers = document.querySelectorAll('.card-port-front');
 
-// Adiciona ouvintes de eventos a cada elemento
 cardContainers.forEach(container => {
- const interrogationActive =container.addEventListener('mouseover', handleInterrogationActive);
- const interrogationDesactivate =container.addEventListener('mouseout', handleInterrogationDesactivate);
+container.addEventListener('mouseover', handleInterrogationActive);
+container.addEventListener('mouseout', handleInterrogationDesactivate);
 });
 
 function handleInterrogationActive(event) {
@@ -200,18 +199,6 @@ function handleInterrogationDesactivate(event) {
     interrogationElement.classList.remove('interrogationActive');
   }
 }
-
-// const cardInterrogationActive = document.querySelectorAll('.container-card-content');
-
-// function toggleInterrogationAnimation(event) {
-//   const id = event.currentTarget.id;
-//   console.log( id);
-//   const targetElement = document.getElementById(id);
-//   targetElement.classList.add('interrogationActive');
-// };
-
-// cardInterrogationActive.addEventListener('mouseover', toggleInterrogationAnimation);
-// cardInterrogationActive.addEventListener('mouseout', toggleInterrogationAnimation);
 
 //Download CV
  function downloadCv() {
