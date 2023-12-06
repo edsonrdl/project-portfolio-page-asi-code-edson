@@ -215,7 +215,7 @@ function handleInterrogationDesactivate(event) {
   xhr.onload = function() {
       if (this.status === 200) {
           var blob = this.response;
-          saveAs(blob, "seu_cv.pdf");
+          saveAs(blob, "CV_Edson_Rodrigo_PT_BR");
       }
   };
   xhr.send();
