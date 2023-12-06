@@ -2,20 +2,15 @@
   --color-blue-violet: #991AE6;
   --color-lavender-floral: #c478f3;
   --color-white: #FEFEFE;
-  --color-infor-ligth: #FEFEFE;
-  --color-infor-dark: #7B7B7B;
   --color-black: #000000;
   --color-black-2: rgb(33, 33, 33);
   --color-onys: #3E3E3E;
-  --color-shadow: #161616;
   --color-gray: #7B7B7B;
-  --color-light: #050404;
-  ---font-size-1:'Black Ops One', sans-serif;
+  --color-shadow: #161616;
+  ---font-family-black-ops-one:'Black Ops One', sans-serif;
+  ---font-family-arial: Arial, sans-serif;
   ---opacity: 50%;
-  --padding-1: 5px;
-  --box-shadow-onys: 0 1rem 2rem var(--color-onys);
   --box-shadow-back: 0 1rem 2rem var(--color-shadow);
-  --box-shadow-onys-2: 1rem 1rem 0.7rem var(--color-onys);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
 * {
@@ -28,23 +23,18 @@
   list-style: none;
   box-sizing: border-box;
 }
-
 html {
   font-size: 14px;
 }
-
 body {
   margin: 0;
-  height: 100vh;
   background-color: var(--color-gray);
 }
-
 /*==========Header menu navegação============*/
 .header-menu {
   position: fixed;
   width: 100%;
   height: 7vh;
-  background: rgb(37, 36, 36);
   background: linear-gradient(90deg, #3e3e3e 0%, rgba(0,0,0,1) 100%);
   z-index: 100;
 }
@@ -53,12 +43,12 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
 }
-
-.header-row-name {
+.header-row-logo {
   height: 100%;
   margin-left: 30px;
   display: flex;
@@ -66,74 +56,57 @@ body {
   align-items: center;
 }
 
-.header-row-name a {
+.header-row-logo a {
   color: var(--color-white);
   font-size: 2rem;
-  text-decoration: none;
-  font-family: 'Black Ops One', sans-serif;
-  transition: all 300ms ease;
+  font-family: var(---font-family-black-ops-one);
+  transition: all 0.3s ease;
 }
-.header-row-name a:hover {
+.header-row-logo a:hover {
   color: var(--color-gray);
-
 }
-.header-row-name b {
+.header-row-logo b {
   color: var(--color-blue-violet);
   font-size: 2rem;
   text-decoration: none;
   font-family: 'Black Ops One', sans-serif;
   transition: all 300ms ease;
 }
-
-.header-row-name b:hover {
+.header-row-logo b:hover {
   color: var(--color-lavender-floral);
-
 }
-
 .header-row-menu-nav {
   width: auto;
   height: 100%;
   margin-right: 30px;
-  list-style: none;
-  gap: 10px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 .header-row-menu-nav nav {
   width: 100%;
   height: 100%;
-  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-
 #btn-mobile {
   display: none;
 }
-
 .header-row-menu-nav ul {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   list-style: none;
   text-decoration: none;
 }
-
 .header-row-menu-nav a {
   display: block;
   color: var(--color-blue-violet);
   font-family: 'Black Ops One', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-decoration: none;
   transition: all 300ms ease;
 }
 
 .header-row-menu-nav a:hover {
   color: var(--color-lavender-floral);
-  font-size: 1.3rem;
 }
 /*======Section initial apresentation=======*/
 .main-initial-apresentation{
@@ -506,7 +479,7 @@ transform: rotate(10deg);
 }
  .button-card-port-btn{
   cursor: pointer;
-  color:var(--color-infor-ligth);
+  color:var(--color-white);
   font-size: 1.2rem;
   font-family: 'Black Ops One', sans-serif;
   width: 100%;
@@ -605,7 +578,7 @@ transform: rotate(10deg);
 .row-text-apresentation-name-function h1{
   font-size: 2rem;
   margin-left: 10px;
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-name-function b{
@@ -614,17 +587,17 @@ transform: rotate(10deg);
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-name-function h2{
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-description h3{
   font-size: 1.5rem;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
   font-family: Arial, sans-serif;
 }
 .row-text-apresentation-description p{
   font-size: 1.2rem;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
   font-family: Arial, sans-serif;
 }
 .container-row-infor-guys{
@@ -649,7 +622,7 @@ transform: rotate(10deg);
   margin-bottom: 10px;
 }
 .row-information-guys-details h1{
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
   font-size: 1.5rem;
   font-family: Arial, sans-serif;
 }
@@ -668,13 +641,13 @@ transform: rotate(10deg);
 .details-column dt {
   font-weight: bold;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
 }
 
 .details-column dd {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
 }
 .container-button-download-cv{
   position: relative;
@@ -768,7 +741,7 @@ display: none;
   justify-content: space-between;
   font-size: 2rem;
   font-family: 'Black Ops One', sans-serif;
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
   background-color: transparent;
 }
 .btn-download-cv{
@@ -849,12 +822,12 @@ box-shadow: var(--box-shadow-violet);
 .title-asi-code h1{
   font-size: 2rem;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
 }
 .title-asi-code h1  b:nth-child(odd) {
   font-size: 2rem;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
 }
 .title-asi-code h1  b:nth-child(even) {
   font-size: 2rem;
@@ -869,7 +842,7 @@ box-shadow: var(--box-shadow-violet);
   font-size: 1rem;
   font-family: Arial, sans-serif;
   padding: 5px 0 0 5px;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
 }
 .social-asi-code{
   width: 100%;
@@ -929,7 +902,7 @@ box-shadow: var(--box-shadow-violet);
   text-align: center;
   font-size: 2rem;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
 }
 .conteiner-skills-competence{
   width: 100%;
@@ -1095,12 +1068,12 @@ box-shadow: var(--box-shadow-back);
 .text-welcome h2{
   font-size: 4rem;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
 }
 .text-welcome h3{
   font-size: 2rem;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
 }
 .text-final{
   display: flex;
@@ -1115,7 +1088,7 @@ box-shadow: var(--box-shadow-back);
   font-size: 1.5rem;
   padding: 0px 10px 0px 10px;
   font-family: Arial, sans-serif;
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
 }
 .column-contatcs{
   width: 100%;
@@ -1168,12 +1141,12 @@ box-shadow: var(--box-shadow-back);
 .contacts-information h3 ,.contacts-information p{
   font-size: 1.5rem;
   margin-left: 10px;
-  color: var(--color-infor-ligth);
+  color: var(--color-white);
   font-family: Arial, sans-serif;
 
 }
 .contacts-information .material-symbols-outlined{
-  color: var(--color-infor-dark);
+  color: var(--color-gray);
   cursor: pointer;
 }
 .contacts-information .material-symbols-outlined:hover{
