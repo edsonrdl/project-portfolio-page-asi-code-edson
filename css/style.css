@@ -10,6 +10,7 @@
   ---font-family-black-ops-one:'Black Ops One', sans-serif;
   ---font-family-arial: Arial, sans-serif;
   ---opacity: 50%;
+  ---opacity-light: 80%;
   --box-shadow-back: 0 1rem 2rem var(--color-shadow);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
@@ -111,14 +112,11 @@ body {
 /*======Section initial apresentation=======*/
 .main-initial-apresentation{
   width: 100%;
-  height: 100;
-  overflow: hidden;
   background: rgb(142, 142, 142);
 }
 .section-initial-presentation{
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   background: linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(0,0,0,1) 100%);
 }
 #icon-container {
@@ -137,29 +135,23 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-areas: "text-initial-apresentation  my-img-initial-apresentation"  ;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text-initial-apresentation  my-img-initial-apresentation"  ;
 }
 .grid-text-initial-apresentation{
-  grid-area: text-initial-apresentation ;
-  width: 100%;
-  height: 100%;
-}
-.container-text-logo-social-apresentation{
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: start;
-
+  grid-area: text-initial-apresentation ;
 }
 .initial-logo-apresentation{
-  margin-top: 100px;
-  width: 400px;
+  margin-top: 80px;
+  width: 200px;
   height:auto;
-  top: 60px;
 }
 .logo-Active{
   animation: floatLogo 6s ease-out infinite;
@@ -182,43 +174,49 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-}
-.content-text-initial-apresentation{
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .box-gray-text-presentation-initial{
   position: absolute;
   float: left;
-  height: 90%;
-  margin: 20px 0px;
+  height: 70%;
   width: 50%;
   background-color: var(--color-gray);
   opacity: 20%;
 }
 .text-presentation-initial{
+  position: absolute;
+  float: left;
   margin-left: 10px;
   width: 100%;
 }
 .text-presentation-initial .text-presentation-initial-p1{
-  font-size: 3.8rem;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
   margin-left: 100px;
   color: var(--color-white);
   opacity: var(---opacity);
   font-family: Arial, sans-serif;
 }
 .text-presentation-initial .text-presentation-initial-p2{
-  font-size: 4.5rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  font-size: 2rem;
   margin-left: 0;
-  margin-top: 30px;
   color: var(--color-white);
   opacity: var(---opacity);
   font-family: Arial, sans-serif;
 }
 .text-presentation-initial .text-presentation-initial-p3{
-  font-size: 3.8rem;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.5rem;
   margin-left: 100px;
-  margin-top: 30px;
   color: var(--color-white);
   opacity: var(---opacity);
   font-family: Arial, sans-serif;
@@ -229,20 +227,16 @@ body {
   height: 100%;
 }
 .button-about-me-initial{
-  right: 400px;
+  right: 0;
   position: absolute;
   display: flex;
   align-items: center;
   background-color:var(--color-blue-violet) ;
   border-radius: 50px;
   padding: 5px;
-  opacity: 80%;
   bottom: 0;
   box-shadow: var(--box-shadow-back);
   transition: all 0.3s ease;
-}
-.button-about-me-initial:hover{
-  box-shadow: var(--box-shadow-violet);
 }
 .btn-about-me-initial{
   height: 100%;
@@ -253,10 +247,11 @@ body {
   height: 30px; 
   background-color: transparent;
   font-size: 2rem;
-  color: var(--color-white);
+  color: rgb(215, 215, 215);
+  transition: all 0.3s ease;
 }
 .btn-about-me-initial:hover{
-  color: rgb(215, 215, 215);
+  color: var(--color-white);
 }
 .column-social-initial{
   display: flex;
@@ -293,9 +288,11 @@ transform: translatey(-5px);
 transform: rotate(10deg);
 }
 .grid-my-img-initial-apresentation{
-  grid-area: my-img-initial-apresentation;
   padding-right: 20px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  grid-area: my-img-initial-apresentation;
 }
 .my-img-initial-apresentation{
   position: relative;
@@ -333,7 +330,7 @@ transform: rotate(10deg);
 
 }
 .content-my-img img{
-  width:400px;
+  width:100%;
   height: 100%;
   opacity: 50%;
 }
