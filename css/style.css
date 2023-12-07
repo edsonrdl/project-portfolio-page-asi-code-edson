@@ -199,7 +199,6 @@ body {
 }
 .text-presentation-initial .text-presentation-initial-p1{
   height: 100%;
-  width: 100%;
   font-size: 1.5rem;
   margin-left: 100px;
   color: var(--color-white);
@@ -207,7 +206,6 @@ body {
   font-family: Arial, sans-serif;
 }
 .text-presentation-initial .text-presentation-initial-p2{
-  width: 100%;
   height: 100%;
   margin-top: 20px;
   font-size: 2rem;
@@ -218,7 +216,6 @@ body {
 }
 .text-presentation-initial .text-presentation-initial-p3{
   height: 100%;
-  width: 100%;
   margin-top: 20px;
   font-size: 1.5rem;
   margin-left: 100px;
@@ -244,14 +241,13 @@ body {
   transition: all 0.3s ease;
 }
 .btn-about-me-initial{
-  height: 100%;
   margin: 10px;
   text-align: center;
   cursor: pointer;
   font-family: 'Black Ops One', sans-serif;
-  height: 30px; 
+  height: 20px; 
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(215, 215, 215);
   transition: all 0.3s ease;
 }
@@ -337,7 +333,6 @@ transform: rotate(10deg);
 .content-my-img img{
   width:100%;
   height: 100%;
-  opacity: 50%;
 }
 /*==========Section Portfolio============*/
 .section-portfolio{
@@ -498,6 +493,7 @@ transform: rotate(10deg);
 .section-about-me{
   width: 100%;
   height: 100%;
+  padding: 10px;
   background-color:var(--color-black-2);
 }
 .container-about-me{
@@ -534,6 +530,7 @@ transform: rotate(10deg);
   height:auto;
   width: 100%;
   display: flex;
+  padding: 0px 10px 0px 10px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -558,7 +555,7 @@ transform: rotate(10deg);
   opacity: var(---opacity);
 }
 .container-texts{
-  width: 60%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -994,7 +991,7 @@ box-shadow: var(--box-shadow-back);
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 0px 100px 0px 100px;
+  padding: 0px 50px 0px 50px;
   background: linear-gradient(135deg, rgba(62,62,62,1) 0%, rgba(5,4,4,1) 100%);
 }
 .text-contact-apresentation-title{
@@ -1157,7 +1154,6 @@ box-shadow: var(--box-shadow-back);
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 5px;
   padding: 0px 0px 5px 0px;
   border-bottom: 1px solid  #7B7B7B;
 }
@@ -1208,18 +1204,95 @@ box-shadow: var(--box-shadow-back);
 
 /*======Mediaquery=======*/
 /*======Menu mobile 1024px=======*/
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
+  .text-presentation-initial .text-presentation-initial-p1 {
+    font-size: 1rem;
+}
+.text-presentation-initial .text-presentation-initial-p2 {
+  font-size: 1.5rem;
+}
+.text-presentation-initial .text-presentation-initial-p3 {
+  font-size: 1rem;
+}
+  .container-row-infor-guys {
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  .container-button-download-cv {
+    width: 200px;
+}
+  .content-button-download-cv .span-download {
+    font-size: 1rem;
 
 }
-/*======Menu mobile 768px=======*/
+  .container-row-infor-guys {
+    gap: 0px;
+}
+  .content-social {
+    font-size: 0.5rem;
+}
+.conteiner-skills-competence {
+ padding: 0px;
+}
+.text-final {
+  padding: 0px;
+}
+.text-welcome h2 {
+  font-size:1.5rem;
+
+}
+.text-welcome h3 {
+  font-size:1rem;
+
+}
+.text-final p {
+  font-size: 1rem;
+}
+.text-conect-final h1 {
+  font-size: 1rem;
+}
+.text-conect-final p {
+  font-size: 0.7rem;
+}
+.contacts-information h3, .contacts-information p {
+  font-size: 0.7rem;
+
+}
+.contact-email,.contact-phone-number,.contact-linkedin,.contact-github,.contact-instagram-guys,.contact-instagram-asi-code,.contact-message-icon-whatsapp {
+   gap: 2px; 
+}
+
+}
+/*======Menu mobile 861px=======*/
+@media (max-width: 861px) {
+  .grid-contacts {
+  padding: 0px;
+}
+}
 @media (max-width: 768px) {
+  .conteiner-skills-competence {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "content-experiential "
+        "personal-education"
+        "personal-interests"
+        "skills-developer ";
+}
+  .grid-contacts {
+    gap: 10px;
+}
 
 }
 /*======Menu mobile 600px=======*/
-@media (max-width: 600px) {
+@media (max-width: 687px) {
   .header-container-row {
     display: flex;
     flex-direction: row-reverse;
+    gap: 100px;
     justify-content: start;
     margin: 0;
     left: 0;
@@ -1228,7 +1301,9 @@ box-shadow: var(--box-shadow-back);
   .header-container-row nav {
     justify-content: start;
   }
-
+  .header-row-menu-nav a {
+    font-size: 2rem;
+}
   .header-row-name a {
     font-size: 1rem;
   }
@@ -1246,7 +1321,7 @@ box-shadow: var(--box-shadow-back);
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
-    top: 64px;
+    top: 44px;
 
   }
 
@@ -1311,5 +1386,109 @@ box-shadow: var(--box-shadow-back);
     transform: rotate(-135deg);
     top: -7px;
   }
+.section-initial-presentation {
+    height: 100%;
+}
+.text-presentation-initial .text-presentation-initial-p1 {
+  font-size: 1.5rem;
+}
+.text-presentation-initial .text-presentation-initial-p2 {
+  font-size: 2rem;
+}
+.text-presentation-initial .text-presentation-initial-p3 {
+  font-size: 1.5rem;
+}
+
+
+  .container-apresentation-initial-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  "my-img-initial-apresentation"
+                          "text-initial-apresentation";
+}
+.grid-text-initial-apresentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.my-img-initial-apresentation {
+  height: 100vh;
+}
+.button-about-me-initial {
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.social-icons-initial-apresentation {
+  width: 40px;
+}
+.row-information-guys-details {
+  align-items: center;
+  height: 400px;
+}
+.infor-guys-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container-row-content-about-me-apresentation {
+  flex-direction: column;
+  gap: 5px;
+}
+.container-texts {
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.container-information-guys-details {
+  margin-bottom: 30px;
+}
+.container-button-download-cv {
+  width: 50%;
+}
+.container-row-infor-guys {
+  gap: 20px;
+}
+.section-contatcs {
+  height: 100%;
+}
+.grid-contacts {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: "column-text-final-area"
+                          "column-contatcs-area";
+ 
+}
+.contacts-information {
+  gap: 50px;
+}
+.text-conect-final h1 {
+  font-size: 2rem;
+}
+.text-conect-final p {
+  font-size: 1.5rem;
+}
+.contact-email,.contact-phone-number,.contact-linkedin,.contact-github,.contact-instagram-guys,.contact-instagram-asi-code,.contact-message-icon-whatsapp  {
+  gap: 0px;
+  justify-content: space-around;
+}
+.contacts-information h3, .contacts-information p {
+  font-size: 1.7rem;
+}
+.contact-message-icon-whatsapp svg {
+  width: 50px;
+  height: 50px;
+}
+
 }
 
