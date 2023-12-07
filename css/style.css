@@ -4,7 +4,7 @@
   --color-white: #FEFEFE;
   --color-black: #000000;
   --color-black-2: rgb(33, 33, 33);
-  --color-onys: #3E3E3E;
+  --color-onys: hsl(0, 0%, 24%);
   --color-gray: #7B7B7B;
   --color-shadow: #161616;
   ---font-family-black-ops-one:'Black Ops One', sans-serif;
@@ -345,7 +345,7 @@ transform: rotate(10deg);
  min-height: 100vh;
  height:100%;
  padding: 3px;
- background-color: var(--color-black);
+ background: radial-gradient(circle, rgba(0,0,0,1) 61%, rgba(25,25,25,1) 100%);
 }
 .container-portfolio .column-portfolio-text-card{
   width: 100%;
@@ -527,14 +527,14 @@ transform: rotate(10deg);
   color: var(--color-blue-violet);
 }
 .container-row-content-about-me-apresentation{
-  height:auto;
-  width: 100%;
-  display: flex;
-  padding: 0px 10px 0px 10px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    padding: 0px 50px 0px 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 .content-my-img-about-me-circle{
   display: flex;
@@ -1214,6 +1214,10 @@ box-shadow: var(--box-shadow-back);
 .text-presentation-initial .text-presentation-initial-p3 {
   font-size: 1rem;
 }
+.container-row-content-about-me-apresentation {
+  width: 90%;
+padding: 0px 30px 0px 30px;
+}
   .container-row-infor-guys {
      height: 100%;
     display: flex;
@@ -1233,11 +1237,25 @@ box-shadow: var(--box-shadow-back);
   .content-social {
     font-size: 0.5rem;
 }
+.portfolio-card-row {
+  gap: 50px;
+}
+.card-content {
+  width: 340px;
+  height: 500px;
+}
+.container-button-card {
+  margin-top: 15px;
+  gap: 20px;
+}
 .conteiner-skills-competence {
  padding: 0px;
 }
+.grid-contacts {
+  padding: 20px;
+}
 .text-final {
-  padding: 0px;
+  padding: 0px 20px 0px 20px;
 }
 .text-welcome h2 {
   font-size:1.5rem;
@@ -1256,6 +1274,7 @@ box-shadow: var(--box-shadow-back);
 .text-conect-final p {
   font-size: 0.7rem;
 }
+
 .contacts-information h3, .contacts-information p {
   font-size: 0.7rem;
 
@@ -1268,7 +1287,7 @@ box-shadow: var(--box-shadow-back);
 /*======Menu mobile 861px=======*/
 @media (max-width: 861px) {
   .grid-contacts {
-  padding: 0px;
+  padding: 10px;
 }
 }
 @media (max-width: 768px) {
@@ -1399,7 +1418,6 @@ box-shadow: var(--box-shadow-back);
   font-size: 1.5rem;
 }
 
-
   .container-apresentation-initial-grid {
     width: 100%;
     height: 100%;
@@ -1432,6 +1450,9 @@ box-shadow: var(--box-shadow-back);
 .social-icons-initial-apresentation {
   width: 40px;
 }
+.container-about-me {
+  gap: 20px;
+}
 .row-information-guys-details {
   align-items: center;
   height: 400px;
@@ -1444,6 +1465,9 @@ box-shadow: var(--box-shadow-back);
 .container-row-content-about-me-apresentation {
   flex-direction: column;
   gap: 5px;
+}
+.container-information-guys-details dl {
+  justify-content: center;
 }
 .container-texts {
   gap: 10px;
@@ -1458,13 +1482,16 @@ box-shadow: var(--box-shadow-back);
 .container-row-infor-guys {
   gap: 20px;
 }
+.content-experiential-text, .content-education-text, .content-interests-text {
+  text-align: center;
+}
 .section-contatcs {
   height: 100%;
 }
 .grid-contacts {
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows:1fr;
     grid-template-areas: "column-text-final-area"
                           "column-contatcs-area";
  
