@@ -541,7 +541,7 @@ transform: rotate(10deg);
   position: fixed;
   z-index: 100;
   left: 0;
-  top: 0;
+  top: -150px;
   width: 100%;
   height: 100%;
   opacity: 100%;
@@ -553,29 +553,29 @@ transform: rotate(10deg);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fefefe;
+  background-color: var(--color-black);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 700px;
-  height:430px;
+  border: 1px solid #991AE6;
+  width: 95%;
+  height:630px;
 }
 .modal-content video{
-  width: 640px;
-  height:360px;
+  width: 100%;
+  height:560px;
 
 }
 .close {
   width: 100%;
   text-align: end;
-  color: #aaaaaa;
+  color: #c478f3;
   float: right;
   font-size: 30px;
   font-weight: bold;
 }
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #991AE6;
   text-decoration: none;
   cursor:pointer;
   
