@@ -510,7 +510,7 @@ transform: rotate(10deg);
   border: 1px solid #ffffff; 
   border-image-slice: 1; 
 }
- .button-card-port-btn{
+ .button-card-port-btn-github{
   cursor: pointer;
   color:var(--color-white);
   font-size: 1.2rem;
@@ -518,12 +518,67 @@ transform: rotate(10deg);
   width: 100%;
   height: 100%;
   background-color: transparent;
+  transition: all 0.3s ease;
 }
-.button-card-port:first-child .button-card-port-btn:hover {
+.button-card-port-btn-github:hover {
   color:var(--color-blue-violet);
 }
-.button-card-port:last-child .button-card-port-btn:hover {
+ .button-card-port-btn-preview{
+  cursor: pointer;
+  color:var(--color-white);
+  font-size: 1.2rem;
+  font-family: 'Black Ops One', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.button-card-port-btn-preview:hover {
   color:var(--color-blue-violet);
+}
+.modal-preview {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px;
+  height:430px;
+}
+.modal-content video{
+  width: 640px;
+  height:360px;
+
+}
+.close {
+  width: 100%;
+  text-align: end;
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor:pointer;
+  
 }
 /*======Section About me=======*/
 .section-about-me{

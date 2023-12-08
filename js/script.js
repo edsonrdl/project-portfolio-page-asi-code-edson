@@ -175,25 +175,29 @@ container.addEventListener('mouseout', handleInterrogationDesactivate);
 function handleInterrogationActive(event) {
   const container = event.currentTarget.closest('.container-card-content');
 
-  if (container) {
-    const containerId = container.id;
-    console.log(containerId);
+  const elementsModal = document.querySelectorAll('.modal-preview');
+  console.log(elementsModal);
 
-    const interrogationElement = container.querySelector('.interrogation');
-    console.log(interrogationElement);
+  elementsModal.forEach(elementModal => {
+    const computedStyleModal = window.getComputedStyle(elementModal);
+    console.log(computedStyleModal);
 
-    interrogationElement.classList.add('interrogationActive');
-  }
+    if (container && computedStyleModal.display === 'none') {
+
+
+      const interrogationElement = container.querySelector('.interrogation');
+      console.log(interrogationElement);
+      interrogationElement.classList.add('interrogationActive');
+    }
+  });
 }
 function handleInterrogationDesactivate(event) {
   const container = event.currentTarget.closest('.container-card-content');
 
   if (container) {
-    const containerId = container.id;
-    console.log(containerId);
+ container.id;
 
     const interrogationElement = container.querySelector('.interrogation');
-    console.log(interrogationElement);
 
     interrogationElement.classList.remove('interrogationActive');
   }
@@ -244,3 +248,30 @@ showNextImageCardPortfolio();
 setInterval(showNextImageCardPortfolio, 5000);
 
 //Modal preview card portfolio
+var modalPreview = document.getElementById("modal-portfolio-preview");
+var span = document.getElementsByClassName("close")[0];
+var btnPreview = document.querySelectorAll(".button-card-port-btn-preview");
+
+btnPreview.forEach(function (button) {
+  button.addEventListener('click', showModalPreviewActive);
+});
+
+function showModalPreviewActive(event) {
+  const btnPreview = event.currentTarget;
+  const modalPreview = btnPreview.nextElementSibling;
+
+  if (modalPreview && modalPreview.classList.contains("modal-preview")) {
+    modalPreview.style.display = "block";
+  }
+}
+
+span.onclick = function () {
+  modalPreview.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modalPreview) {
+    modalPreview.style.display = "none";
+  }
+};
+
