@@ -231,30 +231,42 @@ function copyContacts(text) {
   document.execCommand('copy');
   document.body.removeChild(el);
   alert('Copiado: ' + text);
-}
+};
+
 //Slide img portfolio
-let currentIndex = 0;
-const containerCardContent = document.querySelector('.container-card-content');
-let intervalIdImg; 
+const slidePortfolios = document.querySelectorAll('.slide-portfolio');
+console.log(slidePortfolios);
+let currentIndexImgagem = 0;
+let intervalIdImg;
 
-function showNextImageCardPortfolio() {
-  const slideImgPortfolio = containerCardContent.querySelector('.slide-portfolio');
-  slideImgPortfolio.children[currentIndex].style.opacity = 0;
+function showNextImageCardPortfolio(event) {
+  const elementId = event.currentTarget.id;
+  console.log(elementId);
+  const slideImgPortfolioElement = document.getElementById(elementId);
+  console.log(slideImgPortfolioElement);
 
-  currentIndex = (currentIndex + 1) % slideImgPortfolio.children.length;
-  slideImgPortfolio.children[currentIndex].style.opacity = 1;
+  const slideImgPortfolioChildren = slideImgPortfolioElement.querySelectorAll('.slide-img-portfolio');
+
+  slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 0;
+
+  currentIndexImgagem = (currentIndexImgagem + 1) % slideImgPortfolioChildren.length;
+  slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 1;
 }
 
 function activateShowNextImageCardPortfolio() {
   intervalIdImg = setInterval(showNextImageCardPortfolio, 3000);
+  console.log("Disparou");
 }
 
 function deactivateShowNextImageCardPortfolio() {
   clearInterval(intervalIdImg);
+  currentIndexImgagem = 0;
 }
 
-containerCardContent.addEventListener('mouseenter', activateShowNextImageCardPortfolio);
-containerCardContent.addEventListener('mouseleave', deactivateShowNextImageCardPortfolio);
+
+  portfolio.addEventListener('mouseenter', activateShowNextImageCardPortfolio);
+  portfolio.addEventListener('mouseleave', deactivateShowNextImageCardPortfolio);
+
 
 
 

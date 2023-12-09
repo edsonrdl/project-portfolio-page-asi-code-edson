@@ -394,39 +394,42 @@ transform: rotate(10deg);
   width: 400px;
   padding: 20px;
   display: grid;
-  grid-template-rows: 3fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 2fr 1fr 1fr;
   border-radius: var(---border-radius);
   background-color:transparent;
   box-shadow: var(--box-shadow-back);
-  transition: all 3.0s ease;
+
 }
-.container-card-content:hover{
-  opacity:100%;
-}
+
 .container-card-imgs-slide{
   width: 100%;
   height:100%;
   border-radius: var(---border-radius);
   background-color: transparent;
+  opacity:50%;
+  transition: all 3.0s ease;
+}
+.container-card-imgs-slide:hover{
+  opacity:100%;
 }
 .card-port-imgs{
   width: 100%;
   height: 100%;
-  background-color: var(--color-black-2);
+  background-color: transparent;
+  cursor: pointer;
 }
 .slide-portfolio{
   width: 100%;
   height:  100%;
   overflow: hidden;
   position: relative;
-  cursor: pointer;
-
  }
 
  .slide-img-portfolio {
   width: 200px;
   position: absolute;
   top: 50%;
+  border-radius: var(---border-radius);
   transform: translateY(-50%);
   opacity:1;
   transition: opacity 3s;
@@ -438,67 +441,92 @@ transform: rotate(10deg);
   width: 100%;
   height: 30px;
  }
+ .title-text-project-img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  border-bottom: 1px solid #991AE6;
+ }
  .title-text-project-img h1{
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
   font-size: 2rem;
   font-family: var(---font-family-arial);
+  color: var(--color-blue-violet);
+ }
+ .title-text-project-img b{
+  font-size: 1rem;
+  font-family: var(---font-family-arial);
+  color: var(--color-white);
+ }
+ .title-text-project-img P{
+  font-size: 1rem;
+  font-family: var(---font-family-arial);
   color: var(--color-gray);
  }
-
+.technologies-used {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.technologies-used img{
+  width: 40px;
+  height: 40px;
+}
 .container-button-card{
   display: flex;
   width:100%;
+  height: 30px;
   margin-top: 5px;
   flex-direction: row;
   gap: 5px;
   justify-content: space-between;
-  background-color: transparent;
+  background-color:transparent;
 }
 .button-card-port{
   width: 100%;
-  height: 100%;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-onys);
-  border-width:1px; 
-  border-style: solid; 
-  border-image: linear-gradient(315deg, #991AE6, #c478f3 100%);
-  border-image-slice: 1; 
+  background-image:linear-gradient(315deg, #991AE6, #c478f3 100%);
+  border-radius: var(---border-radius);
+  transition: all 0.3s ease;
 }
 .button-card-port:hover{
-  border: 1px solid #ffffff; 
+  border: 2px solid #ffffff; 
   border-image-slice: 1; 
 }
  .button-card-port-btn-github{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   color:var(--color-white);
   font-size: 1.2rem;
-  font-family: 'Black Ops One', sans-serif;
-  text-align: center;
+  font-family: var(---font-family-black-ops-one);
   width: 100%;
   height: 100%;
   background-color: transparent;
   transition: all 0.3s ease;
 }
-.button-card-port-btn-github:hover {
-  color:var(--color-blue-violet);
-}
+
  .button-card-port-btn-preview{
   cursor: pointer;
   color:var(--color-white);
   font-size: 1.2rem;
-  font-family: 'Black Ops One', sans-serif;
+  font-family: var(---font-family-black-ops-one);
   width: 100%;
   height: 100%;
   background-color: transparent;
   transition: all 0.3s ease;
 }
-.button-card-port-btn-preview:hover {
-  color:var(--color-blue-violet);
-}
+
 .modal-preview {
   display: none;
   position: fixed;
