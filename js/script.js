@@ -163,45 +163,6 @@ window.addEventListener("scroll", checkVisibilityDisplayShowIcons);
 window.addEventListener("resize", checkVisibilityDisplayShowIcons);
 window.addEventListener("load", checkVisibilityDisplayShowIcons);
 
-//Active mouseover em interrogação section portfolio
-// const cardContainers = document.querySelectorAll('.card-port-front');
-
-// cardContainers.forEach(container => {
-// container.addEventListener('mouseover', handleInterrogationActive);
-// container.addEventListener('mouseout', handleInterrogationDesactivate);
-// });
-
-// function handleInterrogationActive(event) {
-//   const container = event.currentTarget.closest('.container-card-content');
-
-//   const elementsModal = document.querySelectorAll('.modal-preview');
-//   console.log(elementsModal);
-
-//   elementsModal.forEach(elementModal => {
-//     const computedStyleModal = window.getComputedStyle(elementModal);
-//     console.log(computedStyleModal);
-
-//     if (container && computedStyleModal.display === 'none') {
-
-
-//       const interrogationElement = container.querySelector('.interrogation');
-//       console.log(interrogationElement);
-//       interrogationElement.classList.add('interrogationActive');
-//     }
-//   });
-// }
-// function handleInterrogationDesactivate(event) {
-//   const container = event.currentTarget.closest('.container-card-content');
-
-//   if (container) {
-//  container.id;
-
-//     const interrogationElement = container.querySelector('.interrogation');
-
-//     interrogationElement.classList.remove('interrogationActive');
-//   }
-// }
-
 //Download CV
  function downloadCv() {
   const displayCatDownload = document.querySelector('.img-cat-display');
@@ -235,38 +196,56 @@ function copyContacts(text) {
 
 //Slide img portfolio
 const slidePortfolios = document.querySelectorAll('.slide-portfolio');
-console.log(slidePortfolios);
 let currentIndexImgagem = 0;
 let intervalIdImg;
+let lastHoveredElement;
 
-function showNextImageCardPortfolio(event) {
-  const elementId = event.currentTarget.id;
-  console.log(elementId);
-  const slideImgPortfolioElement = document.getElementById(elementId);
-  console.log(slideImgPortfolioElement);
+function showNextImageCardPortfolio() {
+  if (lastHoveredElement) {
+    const elementId = lastHoveredElement.id;
+    console.log('ID do elemento:', elementId);
 
-  const slideImgPortfolioChildren = slideImgPortfolioElement.querySelectorAll('.slide-img-portfolio');
+    const slideImgPortfolioElement = document.getElementById(elementId);
+    console.log('Elemento do id', slideImgPortfolioElement);
 
-  slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 0;
+    if (slideImgPortfolioElement) {
+      const slideImgPortfolioChildren = slideImgPortfolioElement.querySelectorAll('.slide-img-portfolio');
+      console.log('Elemento img', slideImgPortfolioChildren);
+      console.log('Elemento img indice 0', slideImgPortfolioChildren[0]);
 
-  currentIndexImgagem = (currentIndexImgagem + 1) % slideImgPortfolioChildren.length;
-  slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 1;
+      slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 0;
+      currentIndexImgagem = (currentIndexImgagem + 1) % slideImgPortfolioChildren.length;
+      console.log('Atualizar o índice da próxima imagem', currentIndexImgagem);
+      slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 1;
+    } else {
+      console.error('Elemento não encontrado no DOM:', elementId);
+    }
+  } else {
+    console.error('Elemento ou ID não definido.');
+  }
 }
 
-function activateShowNextImageCardPortfolio() {
-  intervalIdImg = setInterval(showNextImageCardPortfolio, 3000);
-  console.log("Disparou");
+function activateShowNextImageCardPortfolio(event) {
+  lastHoveredElement = event.currentTarget;
+  showNextImageCardPortfolio(); 
+  if (!intervalIdImg) {
+    intervalIdImg = setInterval(showNextImageCardPortfolio, 3000);
+    console.log('Ativado');
+  }
 }
 
 function deactivateShowNextImageCardPortfolio() {
   clearInterval(intervalIdImg);
+  intervalIdImg = null;
   currentIndexImgagem = 0;
+  lastHoveredElement = null;
+  console.log('Desativado');
 }
 
-
-  portfolio.addEventListener('mouseenter', activateShowNextImageCardPortfolio);
+slidePortfolios.forEach(portfolio => {
+  portfolio.addEventListener('mouseover', activateShowNextImageCardPortfolio);
   portfolio.addEventListener('mouseleave', deactivateShowNextImageCardPortfolio);
-
+});
 
 
 

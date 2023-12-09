@@ -406,8 +406,8 @@ transform: rotate(10deg);
   height:100%;
   border-radius: var(---border-radius);
   background-color: transparent;
-  opacity:50%;
-  transition: all 3.0s ease;
+  opacity:30%;
+  transition: all 0.3s ease;
 }
 .container-card-imgs-slide:hover{
   opacity:100%;
@@ -424,7 +424,6 @@ transform: rotate(10deg);
   overflow: hidden;
   position: relative;
  }
-
  .slide-img-portfolio {
   width: 200px;
   position: absolute;
