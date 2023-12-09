@@ -128,7 +128,6 @@ function activateDisplayIcons() {
 function deactivateDisplayIcons() {
   clearInterval(intervalId);
   intervalId = null;
-  console.log("Desativado");
 }
 
 function checkVisibilityDisplayShowIcons() {
@@ -235,16 +234,29 @@ function copyContacts(text) {
 }
 //Slide img portfolio
 let currentIndex = 0;
-const slidePortfolio = document.querySelectorAll('.slide-portfolio');
-const images = document.querySelectorAll('.slide-img-portfolio');
+const containerCardContent = document.querySelector('.container-card-content');
+let intervalIdImg; 
 
 function showNextImageCardPortfolio() {
- images[currentIndex].style.opacity = 0;
- currentIndex = (currentIndex + 1) % images.length;
- images[currentIndex].style.opacity = 1;
+  const slideImgPortfolio = containerCardContent.querySelector('.slide-portfolio');
+  slideImgPortfolio.children[currentIndex].style.opacity = 0;
+
+  currentIndex = (currentIndex + 1) % slideImgPortfolio.children.length;
+  slideImgPortfolio.children[currentIndex].style.opacity = 1;
 }
-setInterval(showNextImageCardPortfolio, 3000);
-slidePortfolio.addEventListener('mouseover',showNextImageCardPortfolio);
+
+function activateShowNextImageCardPortfolio() {
+  intervalIdImg = setInterval(showNextImageCardPortfolio, 3000);
+}
+
+function deactivateShowNextImageCardPortfolio() {
+  clearInterval(intervalIdImg);
+}
+
+containerCardContent.addEventListener('mouseenter', activateShowNextImageCardPortfolio);
+containerCardContent.addEventListener('mouseleave', deactivateShowNextImageCardPortfolio);
+
+
 
 //Modal preview card portfolio
 var modalPreview = document.getElementById("modal-portfolio-preview");

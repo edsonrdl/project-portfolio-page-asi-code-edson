@@ -428,56 +428,12 @@ transform: rotate(10deg);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 100;
+  opacity:1;
   transition: opacity 3s;
-
  }
  .slide-portfolio img {
   width: 100%;
  }
-/*
-.card-port-back{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-onys);
-  transition: all 0.3s ease;
-}
-.card-port-back:hover{
-  transform: scale(0.98);
- }
-.card-port-back .interrogation{
-  position: absolute;
-  top: 20%;
-  width: 100px;
-}
-
-.interrogationActive{
-  animation: interrogation 6s ease-out infinite ;
-}
-
-@keyframes interrogation {
-  0% {
-      transform: translatey(0px);
-  }
-
-  50% {
-      transform: translatey(-40px);
-  }
-
-  0% {
-      transform: translatey(0px);
-  }
-
-}
-.card-port-back #cat{
-  width:100%;
-  position: absolute;
-  bottom: 0;
-}*/
 .title-text-project-img{
   width: 100%;
   height: 30px;
