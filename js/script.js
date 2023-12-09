@@ -196,7 +196,7 @@ function copyContacts(text) {
 
 //Slide img portfolio
 const slidePortfolios = document.querySelectorAll('.slide-portfolio');
-let currentIndexImgagem = 0;
+let currentIndexImgagem = 1;
 let intervalIdImg;
 let lastHoveredElement;
 
@@ -229,7 +229,7 @@ function activateShowNextImageCardPortfolio(event) {
   lastHoveredElement = event.currentTarget;
   showNextImageCardPortfolio(); 
   if (!intervalIdImg) {
-    intervalIdImg = setInterval(showNextImageCardPortfolio, 3000);
+    intervalIdImg = setInterval(showNextImageCardPortfolio, 2000);
     console.log('Ativado');
   }
 }
