@@ -1071,10 +1071,10 @@ box-shadow: var(--box-shadow-back);
   align-items: center;
 }
 
-.icon {
+.icon-loading {
   height: 1.5rem;
   width: 1.5rem;
-  animation: spin 1s linear infinite;
+  animation: spin 3s linear infinite;
   stroke: rgba(107, 114, 128, 1);
 }
 
