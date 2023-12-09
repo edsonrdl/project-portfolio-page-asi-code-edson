@@ -11,7 +11,7 @@ function deactivateLogoAsiCodeAnimation() {
   logoAsiCode.classList.remove('logo-Active');
 }
 
-sectionInitialPresentationAsiCodeActive.addEventListener('mouseover', activeLogoAsiCodeAnimation);
+sectionInitialPresentationAsiCodeActive.addEventListener('mouseenter', activeLogoAsiCodeAnimation);
 sectionInitialPresentationAsiCodeActive.addEventListener('mouseout', deactivateLogoAsiCodeAnimation);
 
 

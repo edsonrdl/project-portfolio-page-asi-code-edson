@@ -248,7 +248,7 @@ body {
   font-family: 'Black Ops One', sans-serif;
   height: 20px; 
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: rgb(215, 215, 215);
   transition: all 0.3s ease;
 }
@@ -1057,6 +1057,7 @@ height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 box-shadow: var(--box-shadow-back);
 }
 .content-technology-icon-name h2{
@@ -1064,6 +1065,30 @@ box-shadow: var(--box-shadow-back);
   font-family: var(---font-family-arial);
   color: var(--color-gray);
 
+}
+.loader {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  animation: spin 1s linear infinite;
+  stroke: rgba(107, 114, 128, 1);
+}
+
+.loading-text {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: var(--color-gray);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 /*======Section contacts=======*/
 .section-contatcs{
