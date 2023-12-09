@@ -165,43 +165,43 @@ window.addEventListener("resize", checkVisibilityDisplayShowIcons);
 window.addEventListener("load", checkVisibilityDisplayShowIcons);
 
 //Active mouseover em interrogação section portfolio
-const cardContainers = document.querySelectorAll('.card-port-front');
+// const cardContainers = document.querySelectorAll('.card-port-front');
 
-cardContainers.forEach(container => {
-container.addEventListener('mouseover', handleInterrogationActive);
-container.addEventListener('mouseout', handleInterrogationDesactivate);
-});
+// cardContainers.forEach(container => {
+// container.addEventListener('mouseover', handleInterrogationActive);
+// container.addEventListener('mouseout', handleInterrogationDesactivate);
+// });
 
-function handleInterrogationActive(event) {
-  const container = event.currentTarget.closest('.container-card-content');
+// function handleInterrogationActive(event) {
+//   const container = event.currentTarget.closest('.container-card-content');
 
-  const elementsModal = document.querySelectorAll('.modal-preview');
-  console.log(elementsModal);
+//   const elementsModal = document.querySelectorAll('.modal-preview');
+//   console.log(elementsModal);
 
-  elementsModal.forEach(elementModal => {
-    const computedStyleModal = window.getComputedStyle(elementModal);
-    console.log(computedStyleModal);
+//   elementsModal.forEach(elementModal => {
+//     const computedStyleModal = window.getComputedStyle(elementModal);
+//     console.log(computedStyleModal);
 
-    if (container && computedStyleModal.display === 'none') {
+//     if (container && computedStyleModal.display === 'none') {
 
 
-      const interrogationElement = container.querySelector('.interrogation');
-      console.log(interrogationElement);
-      interrogationElement.classList.add('interrogationActive');
-    }
-  });
-}
-function handleInterrogationDesactivate(event) {
-  const container = event.currentTarget.closest('.container-card-content');
+//       const interrogationElement = container.querySelector('.interrogation');
+//       console.log(interrogationElement);
+//       interrogationElement.classList.add('interrogationActive');
+//     }
+//   });
+// }
+// function handleInterrogationDesactivate(event) {
+//   const container = event.currentTarget.closest('.container-card-content');
 
-  if (container) {
- container.id;
+//   if (container) {
+//  container.id;
 
-    const interrogationElement = container.querySelector('.interrogation');
+//     const interrogationElement = container.querySelector('.interrogation');
 
-    interrogationElement.classList.remove('interrogationActive');
-  }
-}
+//     interrogationElement.classList.remove('interrogationActive');
+//   }
+// }
 
 //Download CV
  function downloadCv() {
@@ -235,6 +235,7 @@ function copyContacts(text) {
 }
 //Slide img portfolio
 let currentIndex = 0;
+const slidePortfolio = document.querySelectorAll('.slide-portfolio');
 const images = document.querySelectorAll('.slide-img-portfolio');
 
 function showNextImageCardPortfolio() {
@@ -242,10 +243,8 @@ function showNextImageCardPortfolio() {
  currentIndex = (currentIndex + 1) % images.length;
  images[currentIndex].style.opacity = 1;
 }
-
-
-showNextImageCardPortfolio();
-setInterval(showNextImageCardPortfolio, 5000);
+setInterval(showNextImageCardPortfolio, 3000);
+slidePortfolio.addEventListener('mouseover',showNextImageCardPortfolio);
 
 //Modal preview card portfolio
 var modalPreview = document.getElementById("modal-portfolio-preview");
