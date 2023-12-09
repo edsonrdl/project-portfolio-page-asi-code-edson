@@ -536,6 +536,7 @@ transform: rotate(10deg);
   height: 100%;
   opacity: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+ 
 }
 .modal-content {
   display: flex;
@@ -548,6 +549,7 @@ transform: rotate(10deg);
   border: 1px solid #991AE6;
   width: 95%;
   height:630px;
+  border-radius: var(---border-radius);
 }
 .modal-content video{
   width: 100%;
