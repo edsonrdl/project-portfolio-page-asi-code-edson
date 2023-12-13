@@ -103,12 +103,13 @@ function showIcon() {
   imgElement.style.left = position.x + "px";
   imgElement.style.top = position.y + "px";
   imgElement.style.visibility = "visible";
+  imgElement.style.width = "40px";
 
   container.appendChild(imgElement);
 
   setTimeout(() => {
     imgElement.style.visibility = "hidden";
-  }, 3000);
+  }, 5000);
 }
 
 function activateDisplayIcons() {
@@ -116,7 +117,7 @@ function activateDisplayIcons() {
     intervalId = setInterval(() => {
       clearTimeout(timeoutId);
       showIcon();
-    }, 3000);
+    }, 5000);
   }
 }
 
