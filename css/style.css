@@ -406,12 +406,9 @@ transform: rotate(10deg);
   height:100%;
   border-radius: var(---border-radius);
   background-color: transparent;
-  opacity:30%;
   transition: all 0.3s ease;
 }
-.container-card-imgs-slide:hover{
-  opacity:100%;
-}
+
 .card-port-imgs{
   width: 100%;
   height: 100%;
@@ -548,7 +545,7 @@ transform: rotate(10deg);
   padding: 20px;
   border: 1px solid #991AE6;
   width: 95%;
-  height:630px;
+  height:600px;
   border-radius: var(---border-radius);
 }
 .modal-content video{
@@ -1396,6 +1393,10 @@ padding: 0px 30px 0px 30px;
   .grid-contacts {
   padding: 10px;
 }
+.modal-preview {
+  top: -60px;
+}
+
 }
 @media (max-width: 768px) {
   .conteiner-skills-competence {
@@ -1542,6 +1543,12 @@ padding: 0px 30px 0px 30px;
 }
 .my-img-initial-apresentation {
   height: 100vh;
+}
+.modal-preview {
+  top: -10px;
+}
+.modal-content {
+  height: 450px;
 }
 .button-about-me-initial {
   right: 50%;
