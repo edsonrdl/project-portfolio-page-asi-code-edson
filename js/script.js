@@ -1,4 +1,3 @@
-//Active animation logo
 const sectionInitialPresentationAsiCodeActive = document.querySelector('#container-exibi-icons');
 
 function activeLogoAsiCodeAnimation() {
@@ -15,7 +14,7 @@ sectionInitialPresentationAsiCodeActive.addEventListener('mouseover', activeLogo
 sectionInitialPresentationAsiCodeActive.addEventListener('mouseout', deactivateLogoAsiCodeAnimation);
 
 
-//Menu mobile
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -33,7 +32,8 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-//Scroll Suave navegação
+
+
 function scrollToSectionNav(event) {
 
   event.preventDefault();
@@ -53,7 +53,6 @@ document.querySelectorAll('[data-section]').forEach(link => {
 });
 
 
-//Exibir icones
 
 let intervalId; 
 let timeoutId;
@@ -163,7 +162,7 @@ window.addEventListener("scroll", checkVisibilityDisplayShowIcons);
 window.addEventListener("resize", checkVisibilityDisplayShowIcons);
 window.addEventListener("load", checkVisibilityDisplayShowIcons);
 
-//Download CV
+
  function downloadCv() {
   const displayCatDownload = document.querySelector('.img-cat-display');
 
@@ -183,7 +182,8 @@ window.addEventListener("load", checkVisibilityDisplayShowIcons);
   };
   xhr.send();
 };
-//Copiar contato 
+
+
 function copyContacts(text) {
   const el = document.createElement('textarea');
   el.value = text;
@@ -194,7 +194,7 @@ function copyContacts(text) {
   alert('Copiado: ' + text);
 };
 
-//Slide img portfolio
+
 const slidePortfolios = document.querySelectorAll('.slide-portfolio');
 let currentIndexImgagem = 1;
 let intervalIdImg;
@@ -203,53 +203,40 @@ let lastHoveredElement;
 function showNextImageCardPortfolio() {
   if (lastHoveredElement) {
     const elementId = lastHoveredElement.id;
-    console.log('ID do elemento:', elementId);
 
     const slideImgPortfolioElement = document.getElementById(elementId);
-    console.log('Elemento do id', slideImgPortfolioElement);
 
     if (slideImgPortfolioElement) {
       const slideImgPortfolioChildren = slideImgPortfolioElement.querySelectorAll('.slide-img-portfolio');
-      console.log('Elemento img', slideImgPortfolioChildren);
-      console.log('Elemento img indice 0', slideImgPortfolioChildren[0]);
 
       slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 0;
       currentIndexImgagem = (currentIndexImgagem + 1) % slideImgPortfolioChildren.length;
-      console.log('Atualizar o índice da próxima imagem', currentIndexImgagem);
       slideImgPortfolioChildren[currentIndexImgagem].style.opacity = 1;
-    } else {
-      console.error('Elemento não encontrado no DOM:', elementId);
+    } 
     }
-  } else {
-    console.error('Elemento ou ID não definido.');
-  }
 }
 
 function activateShowNextImageCardPortfolio(event) {
   lastHoveredElement = event.currentTarget;
   showNextImageCardPortfolio(); 
   if (!intervalIdImg) {
-    intervalIdImg = setInterval(showNextImageCardPortfolio, 2000);
-    console.log('Ativado');
+    intervalIdImg = setInterval(showNextImageCardPortfolio, 3000);
+
   }
 }
-
 function deactivateShowNextImageCardPortfolio() {
   clearInterval(intervalIdImg);
   intervalIdImg = null;
   currentIndexImgagem = 0;
   lastHoveredElement = null;
-  console.log('Desativado');
 }
-
 slidePortfolios.forEach(portfolio => {
-  portfolio.addEventListener('mouseover', activateShowNextImageCardPortfolio);
+  portfolio.addEventListener('mouseenter', activateShowNextImageCardPortfolio);
   portfolio.addEventListener('mouseleave', deactivateShowNextImageCardPortfolio);
 });
 
 
 
-//Modal preview card portfolio
 var modalPreview = document.getElementById("modal-portfolio-preview");
 var span = document.getElementsByClassName("close")[0];
 var btnPreview = document.querySelectorAll(".button-card-port-btn-preview");

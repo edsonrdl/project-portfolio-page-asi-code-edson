@@ -334,7 +334,7 @@ transform: rotate(10deg);
 .content-my-img img{
   width:100%;
   height: 100%;
-  filter: grayscale(100%);
+  opacity: 50%;
 }
 /*==========Section Portfolio============*/
 .section-portfolio{
