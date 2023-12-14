@@ -1517,14 +1517,19 @@ padding: 0px 30px 0px 30px;
 .section-initial-presentation {
     height: 100%;
 }
+.text-presentation-initial {
+  width: 95%;
+}
 .text-presentation-initial .text-presentation-initial-p1 {
   font-size: 1.5rem;
+  margin-left: 30px;
 }
 .text-presentation-initial .text-presentation-initial-p2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .text-presentation-initial .text-presentation-initial-p3 {
   font-size: 1.5rem;
+  margin-left: 30px;
 }
 
   .container-apresentation-initial-grid {
@@ -1610,29 +1615,29 @@ padding: 0px 30px 0px 30px;
 .contacts-information {
   gap: 5px;
 }
-.contact-email,.contact-phone-number,.contact-linkedin,.contact-github,.contact-instagram-guys,.contact-instagram-asi-code,.contact-message-icon-whatsapp {
+.contact-email,.contact-phone-number,.contact-linkedin,.contact-github,.contact-instagram-guys,.contact-instagram-asi-code,.contact-message-icon-whatsapp,.copy-icon {
   flex-direction: column;
-  gap: 10px;
 }
 .text-welcome h2 {
   font-size: 1rem;
 }
 .text-conect-final h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .text-conect-final p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .contact-email,.contact-phone-number,.contact-linkedin,.contact-github,.contact-instagram-guys,.contact-instagram-asi-code,.contact-message-icon-whatsapp  {
   gap: 0px;
   justify-content: space-around;
 }
 .contacts-information h3, .contacts-information p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 .contact-message-icon-whatsapp svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 }
