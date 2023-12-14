@@ -1591,8 +1591,9 @@ padding: 0px 30px 0px 30px;
 }
 .column-social-initial {
   width: 90%;
-  height: 60%;
-  margin-bottom: 20px;
+  height: 70%;
+  margin-bottom: 10px;
+  align-items: center;
 }
 .container-social-icons {
   display: flex;
