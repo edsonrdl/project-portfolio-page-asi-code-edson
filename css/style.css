@@ -1430,7 +1430,7 @@ padding: 0px 30px 0px 30px;
     justify-content: start;
   }
   .header-row-menu-nav a {
-    font-size: 2rem;
+    font-size: 1rem;
 }
   .header-row-name a {
     font-size: 1rem;
@@ -1442,19 +1442,19 @@ padding: 0px 30px 0px 30px;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    width: 80%;
+    width: 60%;
     left: 0px;
     background: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(0,0,0,1) 100%);
     z-index: 99;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
-    top: 44px;
+    top: 39px;
 
   }
 
   #menu-nav.active #menu {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 39px);
     visibility: visible;
     overflow-y: auto;
 
