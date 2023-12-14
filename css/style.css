@@ -1541,6 +1541,9 @@ padding: 0px 30px 0px 30px;
   margin-left: 5px;
   margin-top: 5px;
 }
+.button-apresentation-initial-about-me{
+  height: 80%;
+}
 .btn-about-me-initial {
   font-size: 0.7rem;
 }
@@ -1588,6 +1591,8 @@ padding: 0px 30px 0px 30px;
 }
 .column-social-initial {
   width: 90%;
+  height: 60%;
+  margin-bottom: 20px;
 }
 .container-social-icons {
   display: flex;
