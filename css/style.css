@@ -248,7 +248,7 @@ body {
   font-family: 'Black Ops One', sans-serif;
   height: 20px; 
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgb(215, 215, 215);
   transition: all 0.3s ease;
 }
@@ -1423,7 +1423,7 @@ padding: 0px 30px 0px 30px;
     gap: 100px;
     justify-content: start;
     margin: 0;
-    left: 0;
+    left: 10px;
   }
 
   .header-container-row nav {
@@ -1565,7 +1565,7 @@ padding: 0px 30px 0px 30px;
 }
 .container-social-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .social-icons-initial-apresentation {
   width: 40px;
@@ -1607,6 +1607,7 @@ padding: 0px 30px 0px 30px;
 }
 .section-contatcs {
   height: 100%;
+  padding: 0px 10px 0px 10px;
 }
 .grid-contacts {
   display: flex;
