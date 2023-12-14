@@ -1252,6 +1252,7 @@ box-shadow: var(--box-shadow-back);
   gap: 20px;
   padding: 0px 0px 5px 0px;
   border-bottom: 1px solid  #7B7B7B;
+  text-decoration: none;
 }
 .contact-linkedin{
   width: 100%;
