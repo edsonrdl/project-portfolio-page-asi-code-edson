@@ -227,7 +227,7 @@ activateShowNextImageCardPortfolio();
 
 var modalPreview = document.getElementById("modal-portfolio-preview");
 var span = document.getElementsByClassName("close")[0];
-var btnPreview = document.querySelectorAll(".button-card-port-btn-preview");
+var btnPreview = document.querySelectorAll(".button-card-port-btn-preview-modal");
 
 btnPreview.forEach(function (button) {
   button.addEventListener("click", showModalPreviewActive);
