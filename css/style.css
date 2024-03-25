@@ -9,16 +9,15 @@
   --color-shadow: #161616;
   ---font-family-black-ops-one:'Black Ops One', sans-serif;
   ---font-family-arial: Arial, sans-serif;
-  ---font-size-title: 3rem;
+  ---font-size-title-section: 3rem;
   ---font-size-subg-title: 3rem;
-  ---font-size-p: 0.8rem;
-  ---font-size-p-card-infor: 0.8rem;
+  ---font-size-paragraph: 0.8rem;
+  ---font-size-paragraph-infor: 0.8rem;
   ---opacity: 50%;
   ---border-radius:10px;
   ---margin-top-title: 45px;
   --padding-left-right: 0px 30px 0px 30px;
   ---heigth-top-title: 4rem;
-  --opacity-light: 80%;
   --box-shadow-back: 0 1rem 2rem var(--color-shadow);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
@@ -44,7 +43,7 @@ body {
 .header-container-row {
   position: fixed;
   width: 100%;
-  height: 7vh;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,24 +59,17 @@ body {
   justify-content: start;
   align-items: center;
 }
-.header-row-logo a {
-  color: var(--color-white);
-  font-size: 2rem;
+.font-style-logo{
+  font-size: 3rem;
   font-family: var(---font-family-black-ops-one);
   transition: all 0.3s ease;
 }
-.header-row-logo a:hover {
-  color: var(--color-gray);
+.header-row-logo a {
+  color: var(--color-white);
+
 }
-.header-row-logo b {
+.header-row-logo em {
   color: var(--color-blue-violet);
-  font-size: 2rem;
-  text-decoration: none;
-  font-family: 'Black Ops One', sans-serif;
-  transition: all 300ms ease;
-}
-.header-row-logo b:hover {
-  color: var(--color-lavender-floral);
 }
 .header-row-menu-nav {
   width: auto;
@@ -364,7 +356,7 @@ transform: rotate(10deg);
   background-color:transparent;
 }
 .portfolio-text h1  {
-  font-size: var(---font-size-title);
+  font-size: var(---font-size-title-section);
   text-align: center;
   cursor: pointer;
   font-family: var(---font-family-black-ops-one);
@@ -373,7 +365,7 @@ transform: rotate(10deg);
   opacity: var(---opacity);
 }
 .portfolio-text b {
-  font-size: var(---font-size-title);
+  font-size: var(---font-size-title-section);
   text-align: center;
   cursor: pointer;
   font-family: var(---font-family-black-ops-one);
@@ -601,7 +593,7 @@ transform: rotate(10deg);
   height: var(---heigth-top-title);
 }
 .content-about-me h1{
-  font-size: var(---font-size-title);
+  font-size: var(---font-size-title-section);
   text-align: center;
   cursor: pointer;
   font-family: var(---font-family-black-ops-one);
@@ -610,7 +602,7 @@ transform: rotate(10deg);
   opacity: var(---opacity);
 }
 .content-about-me b{
-  font-size:var(---font-size-title);
+  font-size:var(---font-size-title-section);
   text-align: center;
   cursor: pointer;
   font-family: 'Black Ops One', sans-serif;
@@ -1124,7 +1116,7 @@ box-shadow: var(--box-shadow-back);
   justify-content: center;
 }
 .title-contact h1{
-  font-size: var(---font-size-title);
+  font-size: var(---font-size-title-section);
   text-align: center;
   cursor: pointer;
   font-family: 'Black Ops One', sans-serif;
@@ -1133,7 +1125,7 @@ box-shadow: var(--box-shadow-back);
   opacity: var(---opacity);
 }
 .title-contact b{
-  font-size: var(---font-size-title);
+  font-size: var(---font-size-title-section);
   text-align: center;
   cursor: pointer;
   font-family: var(---font-family-black-ops-one);
