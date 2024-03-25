@@ -10,12 +10,15 @@
   ---font-family-black-ops-one:'Black Ops One', sans-serif;
   ---font-family-arial: Arial, sans-serif;
   ---font-size-title: 3rem;
+  ---font-size-subg-title: 3rem;
+  ---font-size-p: 0.8rem;
+  ---font-size-p-card-infor: 0.8rem;
   ---opacity: 50%;
   ---border-radius:10px;
   ---margin-top-title: 45px;
   --padding-left-right: 0px 30px 0px 30px;
   ---heigth-top-title: 4rem;
-  ---opacity-light: 80%;
+  --opacity-light: 80%;
   --box-shadow-back: 0 1rem 2rem var(--color-shadow);
   --box-shadow-violet: 0 0.5rem 1rem var(--color-blue-violet);
 }
