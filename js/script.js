@@ -172,7 +172,7 @@ function downloadCv() {
   }, 4000);
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "CV_Edson_Rodrigo_PT_BR.pdf.pdf", true);
+  xhr.open("GET", "../assets/cv/CV_Edson_Rodrigo_FULL_STACK_PT_BR.pdf.pdf", true);
   xhr.responseType = "blob";
   xhr.onload = function () {
     if (this.status === 200) {
