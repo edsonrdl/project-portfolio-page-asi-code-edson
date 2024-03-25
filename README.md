@@ -16,14 +16,13 @@ Esse projeto tem como objetivo anexar meus projetos e habilidades conforme minha
 
 
 ## Demostração das seções
-1. Página inicial
-![Alt text](image.png)
-
-2. Portfólio
-![Alt text](image-6.png)
-3. Sobre mim
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
-4. Meus contatos
-![Alt text](image-5.png)
+- **Seção inicial**
+![Alt text](./assets/Readme/img-section-initial.png)
+- **Seção Portfólio**
+![Alt text](./assets/Readme/img-section-portfolio.png)
+- **Seção Sobre mim**
+![Alt text](./assets/Readme/img-section-about-me.png)
+![Alt text](./assets/Readme/img-section-about-me-text-infor.png)
+![Alt text](./assets/Readme/img-section-about-me-skills.png)
+- **Seção Contatos**
+![Alt text](./assets/Readme/img-section-contacts.png)
