@@ -56,28 +56,38 @@ document.querySelectorAll("[data-section]").forEach((link) => {
 let intervalId;
 let timeoutId;
 function getRandomIcon() {
-  const IconsArray = [
-    "./assets/icons/icon-.net-framework.png",
-    "./assets/icons/icon-angula.png",
-    "./assets/icons/icon-c-sharp-logo.png",
-    "./assets/icons/icon-css.png",
-    "./assets/icons/icon-docker.png",
-    "./assets/icons/icon-html-5.png",
-    "./assets/icons/icon-java.png",
-    "./assets/icons/icon-javascript.png",
-    "./assets/icons/icon-mongodb.png",
-    "./assets/icons/icon-mysql.png",
-    "./assets/icons/icon-node-js.png",
-    "./assets/icons/icon-postgres.png",
-    "./assets/icons/icon-postman.png",
-    "./assets/icons/icon-python.png",
-    "./assets/icons/icon-sass.png",
-    "./assets/icons/icon-spring-boot.png",
-    "./assets/icons/icon-sql-server.png",
-    "./assets/icons/icon-typescript.png",
+  const imgList = [
+    "./assets/img/angular.png",
+    "./assets/img/arch-mvc.png",
+    "./assets/img/c-charp.png",
+    "./assets/img/clean-architecture.png",
+    "./assets/img/css.png",
+    "./assets/img/docker.png",
+    "./assets/img/dot-net-core.png",
+    "./assets/img/firebase.png",
+    "./assets/img/html.png",
+    "./assets/img/java.png",
+    "./assets/img/javascript.png",
+    "./assets/img/mongodb.png",
+    "./assets/img/mysql.png",
+    "./assets/img/node.png",
+    "./assets/img/postgresql.png",
+    "./assets/img/postman.png",
+    "./assets/img/rabbitmq.png",
+    "./assets/img/sass.png",
+    "./assets/img/springboot.png",
+    "./assets/img/sqlserve.png",
+    "./assets/img/typescript.png",
+    "./assets/img/tomcat.png",
+    "./assets/img/react-native.png",
+    "./assets/img/gitlab.png",
+    "./assets/img/github.png",
+    "./assets/img/aws.png",
+    "./assets/img/jenkins.png",
+    "./assets/img/redis.png"
   ];
 
-  return IconsArray[Math.floor(Math.random() * IconsArray.length)];
+  return imgList[Math.floor(Math.random() * imgList.length)];
 }
 
 function getRandomPositionDisplay() {
