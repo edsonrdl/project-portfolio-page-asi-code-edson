@@ -59,7 +59,7 @@ function getRandomIcon() {
   const imgList = [
     "./assets/img/angular.png",
     "./assets/img/arch-mvc.png",
-    "./assets/img/c-charp.png",
+    "./assets/img/c-sharp.png",
     "./assets/img/clean-architecture.png",
     "./assets/img/css.png",
     "./assets/img/docker.png",
@@ -84,7 +84,8 @@ function getRandomIcon() {
     "./assets/img/github.png",
     "./assets/img/aws.png",
     "./assets/img/jenkins.png",
-    "./assets/img/redis.png"
+    "./assets/img/redis.png",
+    "./assets/img/apache-kafka.png"
   ];
 
   return imgList[Math.floor(Math.random() * imgList.length)];
