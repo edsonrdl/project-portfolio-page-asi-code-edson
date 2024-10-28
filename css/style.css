@@ -859,7 +859,6 @@ box-shadow: var(--box-shadow-violet);
   flex-direction: column;
   background-color:transparent;
   box-shadow: var(--box-shadow-back);
-  opacity: var(---opacity);
 }
 .content-information-details-technician{
   width: 100%;
@@ -1068,11 +1067,13 @@ box-shadow: var(--box-shadow-back);
   text-align: center;
   font-size: 0.8rem;
   font-family: var(---font-family-arial);
-  color: var(--color-gray);
+  color: var(--color-white);
+  font-weight: 600;
 
 }
 .technology-icon img{
   width: 40px;
+  filter: drop-shadow(5px 5px 1px #000000);
 }
 .loader {
   display: flex;
