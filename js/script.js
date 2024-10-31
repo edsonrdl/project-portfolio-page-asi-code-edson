@@ -194,12 +194,12 @@ function downloadCv() {
   }, 4000);
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "../assets/cv/CV_Edson_Rodrigo.pdf", true);
+  xhr.open("GET", "../assets/CV_Edson_Rodrigo.pdf", true);
   xhr.responseType = "blob";
   xhr.onload = function () {
     if (this.status === 200) {
       var blob = this.response;
-      saveAs(blob, "CV_Edson_Rodrigo_PT_BR");
+      saveAs(blob, "CV_Edson_Rodrigo");
     }
   };
   xhr.send();
