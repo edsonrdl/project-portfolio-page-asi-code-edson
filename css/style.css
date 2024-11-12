@@ -385,7 +385,7 @@ transform: rotate(10deg);
   width: 400px;
   padding: 20px;
   display: grid;
-  grid-template-rows: 3fr 2fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr 1fr;
   border-radius: var(---border-radius);
   background-color:transparent;
   box-shadow: var(--box-shadow-back);
@@ -434,12 +434,11 @@ transform: rotate(10deg);
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-around;
   border-bottom: 1px solid #991AE6;
  }
  .title-text-project-img h1{
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-family: var(---font-family-arial);
   color: var(--color-blue-violet);
  }
@@ -532,26 +531,71 @@ transform: rotate(10deg);
   position: fixed;
   z-index: 100;
   left: 0;
-  top: -150px;
+  top: -70px;
   width: 100%;
   height: 100%;
   opacity: 100%;
   background-color: rgba(0, 0, 0, 0.4);
- 
 }
+
 .modal-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   background-color: var(--color-black);
-  margin: 15% auto;
-  padding: 20px;
+  margin: 5% auto;
+  padding: 30px;
   border: 1px solid #991AE6;
-  width: 95%;
-  height:600px;
-  border-radius: var(---border-radius);
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.modal-content-infor {
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.modal-content-infor h2 {
+  margin-bottom: 20px;
+  color: #991AE6;
+}
+
+.modal-content-infor p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.modal-content-infor ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.modal-content-infor ul li {
+  margin-bottom: 10px;
+}
+
+.close {
+  align-self: flex-end;
+  font-size: 24px;
+  color: #991AE6;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.modal-content-infor {
+  color: #ffffff;
+}
+.modal-content-infor-img {
+  width: 100%;
+}
+
 .modal-content video{
   width: 100%;
   height:560px;

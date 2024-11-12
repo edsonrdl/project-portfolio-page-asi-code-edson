@@ -247,29 +247,31 @@ function activateShowNextImageCardPortfolio() {
 }
 activateShowNextImageCardPortfolio();
 
-var modalPreview = document.getElementById("modal-portfolio-preview");
-var span = document.getElementsByClassName("close")[0];
 var btnPreview = document.querySelectorAll(".button-card-port-btn-preview-modal");
+var modals = document.querySelectorAll(".modal-preview");
 
 btnPreview.forEach(function (button) {
-  button.addEventListener("click", showModalPreviewActive);
+  button.addEventListener("click", function (event) {
+    const modalPreview = button.nextElementSibling;
+    if (modalPreview && modalPreview.classList.contains("modal-preview")) {
+      modalPreview.style.display = "block";
+    }
+  });
 });
 
-function showModalPreviewActive(event) {
-  const btnPreview = event.currentTarget;
-  const modalPreview = btnPreview.nextElementSibling;
 
-  if (modalPreview && modalPreview.classList.contains("modal-preview")) {
-    modalPreview.style.display = "block";
-  }
-}
+modals.forEach(function (modal) {
+  var span = modal.querySelector(".close");
+  span.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+});
 
-span.onclick = function () {
-  modalPreview.style.display = "none";
-};
 
-window.onclick = function (event) {
-  if (event.target == modalPreview) {
-    modalPreview.style.display = "none";
-  }
-};
+window.addEventListener("click", function (event) {
+  modals.forEach(function (modal) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
